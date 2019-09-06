@@ -6,20 +6,14 @@ class intsep {
     Scanner in = new Scanner(System.in);
 
     // get number
-    System.out.print("input a 5 digit number: ");
+    System.out.print("input any amount of any alphanumeric character: ");
     String number = in.next();
 
-    // check length 
-    if (number.length() > 5) {
-        System.exit(0);
-    }
-
     // seperate digits and print
-    System.out.print(number.substring(0,1) +"   ");  
-    System.out.print(number.substring(1,2) +"   ");    
-    System.out.print(number.substring(2,3) +"   ");
-    System.out.print(number.substring(3,4) +"   ");
-    System.out.print(number.substring(4,5) +"   ");
-    in.close();
+    for (int i = 1; i <= number.length(); i++) {
+        System.out.print(number.substring(i-1,i) +"   ");
+        }
+
+        in.close();
     } // main
 } // class
