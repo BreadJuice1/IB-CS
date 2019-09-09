@@ -3,17 +3,19 @@ import java.util.Scanner; import java.lang.Math;
 class lab3 {
     public static void main(String[] args) {
 
-    Scanner nums = new Scanner(System.in);
+    Scanner in = new Scanner(System.in);
 
     System.out.print("input program:");
-    int programNum = 0;
+
+    int programNum = -1;
 
     do {
         // check program
-        programNum = nums.nextInt();
+        programNum = in.nextInt();
         if (programNum == 1) {
 
             // get a, b, and c
+            Scanner nums = new Scanner(System.in);
             System.out.print("input a:");
             Double a = nums.nextDouble();
             System.out.print("input b:");
@@ -30,8 +32,32 @@ class lab3 {
             {
                 System.out.println("x is an imaginary number");
             } else System.out.println("The values are: " + x1 + ", " + x2);
-        }
-    } while (programNum == 0);
+        } // program 1
+    
+        if (programNum == 2) {
 
+            // get a and b
+            Scanner nums = new Scanner(System.in);
+            System.out.print("input a:");
+            Double a = nums.nextDouble();
+            System.out.print("input b:");
+            Double b = nums.nextDouble();
+            nums.close();
+
+            // math
+            Double cSquared = (a*a) + (b*b);
+            Double c = Math.sqrt(cSquared);
+
+            // return answers
+            System.out.print("c = " +c);
+
+        } // program 2
+
+        if (programNum == 0) {
+             System.exit(0);
+        } // program 3
+    } while (programNum == -1);
+
+    in.close();
     } // main
 } // class
