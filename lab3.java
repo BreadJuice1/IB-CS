@@ -5,13 +5,22 @@ class lab3 {
 
     Scanner in = new Scanner(System.in);
 
-    System.out.print("input program:");
-
     int programNum = -1;
 
     do {
         // check program
+        System.out.print("input program:");
         programNum = in.nextInt();
+        if (programNum > 2 || programNum < 0) {
+            System.out.println("number | program");
+            System.out.println("-------|-------------------");
+            System.out.println("   1   | quadratic formula");
+            System.out.println("   2   | pythagoreas therom");
+            System.out.println("   0   | exit");
+
+            programNum = -1;
+        }
+
         if (programNum == 1) {
 
             // get a, b, and c
