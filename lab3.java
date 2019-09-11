@@ -11,7 +11,7 @@ class lab3 {
         // check program
         System.out.print("input program:");
         programNum = in.nextInt();
-        if (programNum > 2 || programNum < 0) {
+        if (programNum != 0 && programNum != 1 && programNum != 2) {
             System.out.println("number | program");
             System.out.println("-------|-------------------");
             System.out.println("   1   | quadratic formula");
