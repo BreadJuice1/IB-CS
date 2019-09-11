@@ -28,7 +28,7 @@ class bmi {
                     System.out.println("your bmi is " +bmi);
                     System.out.println("you are obese");
                 }
-
+        in.close();
     } // main
 
 } // class

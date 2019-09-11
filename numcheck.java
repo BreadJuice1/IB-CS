@@ -16,6 +16,6 @@ class numcheck {
     } else {
         System.out.println(number +" is an odd number");
     }
-
+    in.close();
     } // main
 } // class

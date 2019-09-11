@@ -33,6 +33,6 @@ class grades {
                         System.out.print("F, " +percent_score +"%");
                     }
 
-
+                    in.close();
     } // main
 } // class
