@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner; import java.lang.Math;
 
 class lab3 {
@@ -10,6 +11,7 @@ class lab3 {
     do {
         // check program
         System.out.print("input program:");
+            try {
         programNum = in.nextInt();
         if (programNum != 0 && programNum != 1 && programNum != 2) {
             System.out.println("number | program");
@@ -65,6 +67,10 @@ class lab3 {
         if (programNum == 0) {
              System.exit(0);
         } // program 3
+    } catch(InputMismatchException e) {
+        System.out.print("please input a number.");
+        System.exit(0);
+    }
     } while (programNum == -1);
 
     in.close();
