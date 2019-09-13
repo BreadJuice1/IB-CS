@@ -1,5 +1,4 @@
-import java.util.InputMismatchException;
-import java.util.Scanner; import java.lang.Math;
+import java.util.InputMismatchException; import java.util.Scanner; import java.lang.Math;
 
 class lab3 {
     public static void main(String[] args) {
@@ -70,9 +69,8 @@ class lab3 {
     } catch(InputMismatchException e) {
         System.out.print("please input a number.");
         System.exit(0);
-    }
+            } 
     } while (programNum == -1);
-
-    in.close();
+     in.close();
     } // main
 } // class
