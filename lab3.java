@@ -27,16 +27,16 @@ class lab3 {
             // get a, b, and c
             Scanner nums = new Scanner(System.in);
             System.out.print("input a:");
-            Double a = nums.nextDouble();
+                Double a = nums.nextDouble();
             System.out.print("input b:");
-            Double b = nums.nextDouble();
+                Double b = nums.nextDouble();
             System.out.print("input c:");
-            Double c = nums.nextDouble();
+                Double c = nums.nextDouble();
             nums.close();
 
             // math
-            double x1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
-            double x2 = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+                double x1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+                double x2 = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
     
             if (Double.isNaN(x1) || Double.isNaN(x2))
             {
@@ -49,9 +49,9 @@ class lab3 {
             // get a and b
             Scanner nums = new Scanner(System.in);
             System.out.print("input a:");
-            Double a = nums.nextDouble();
+                Double a = nums.nextDouble();
             System.out.print("input b:");
-            Double b = nums.nextDouble();
+                Double b = nums.nextDouble();
             nums.close();
 
             // math
