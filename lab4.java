@@ -28,6 +28,11 @@
         int average = 0;
         int counter = 0;
         String averageGrade = "bruh";
+        int amountA = 0;
+        int amountB = 0;
+        int amountC = 0;
+        int amountD = 0;
+        int amountF = 0;
     
         do {
             System.out.print("input grade:");
@@ -36,7 +41,19 @@
             
             if (grade != -1) {
             average = (average * counter + grade) / (counter + 1);
+            
+            if (grade >= 90) {
+                amountA++;
+            } else if (grade >= 80 || grade < 90) {
+                amountB++;
+            } else if (grade >= 70 || grade < 80) {
+                amountC++;
+            } else if (grade >= 60 || grade < 70) {
+                amountD++;
+            } else {
+                amountF++;
             }
+        }
             counter++;
 
         } while (grade != -1); 
@@ -53,10 +70,19 @@
         averageGrade = "F";
         }
 
-        System.out.print("the average is " +averageGrade);
+        System.out.println("the average is " +averageGrade);
+        System.out.println(amountA +" studnets got an A");
+        System.out.println(amountB +" students got a B");
+        System.out.println(amountC +" students got a C");
+        System.out.println(amountD +" students got a D");
+        System.out.println(amountF +" students got a F");
         
         grades.close();
     } // grades
+
+    public static void reciprocal() {
+    
+    }
     
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
