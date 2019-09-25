@@ -44,11 +44,11 @@
             
             if (grade >= 90) {
                 amountA++;
-            } else if (grade >= 80 || grade < 90) {
+            } else if (grade >= 80 && grade < 90) {
                 amountB++;
-            } else if (grade >= 70 || grade < 80) {
+            } else if (grade >= 70 && grade < 80) {
                 amountC++;
-            } else if (grade >= 60 || grade < 70) {
+            } else if (grade >= 60 && grade < 70) {
                 amountD++;
             } else {
                 amountF++;
@@ -60,11 +60,11 @@
         
         if (average >= 90) { 
         averageGrade = "A";
-        } else if (average >= 80 || average < 90) {
+        } else if (average >= 80 && average < 90) {
         averageGrade = "B";
-        } else if (average >= 70 || average < 80) {
+        } else if (average >= 70 && average < 80) {
         averageGrade = "C";
-        } else if (average >= 60 || average < 70) {
+        } else if (average >= 60 && average < 70) {
         averageGrade = "D";
         } else {
         averageGrade = "F";
