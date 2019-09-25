@@ -82,6 +82,16 @@
 
     public static void reciprocal() {
     
+        Scanner in = new Scanner(System.in);
+        
+        double num = 0;
+        double sum = 0;
+        double recip = 0;
+
+        for (int i = 0; i<=10; i++) {
+        
+        }
+
     }
     
     public static void main(String[] args) {
