@@ -119,8 +119,9 @@ class lab4 {
         while (found == false) {
             LCM++;
 
-            if ((num1 / LCM) % 1 == 0 && (num2 / LCM) % 1 == 0) {
+            if ((LCM / num1) % 1 == 0 && (LCM / num2) % 1 == 0) {
                 System.out.print("the LCM is " + LCM);
+                found = true;
             }
         }
         System.out.print(LCM);
