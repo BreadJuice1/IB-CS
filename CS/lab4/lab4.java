@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.util.*;
+import java.lang.Math;
 
 class lab4 {
     public static void sigma() {
@@ -112,11 +113,15 @@ class lab4 {
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
-        int LCM = 1;
+        int LCM = 0;
         Boolean found = false;
 
         while (found == false) {
+            LCM++;
 
+            if ((num1 / LCM) % 1 == 0 && (num2 / LCM) % 1 == 0) {
+                System.out.print("the LCM is " + LCM);
+            }
         }
         System.out.print(LCM);
 
