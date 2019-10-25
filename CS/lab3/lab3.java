@@ -13,6 +13,11 @@ class lab3 {
         do {
             // check program
             try {
+                System.out.println("number | program");
+                System.out.println("-------|-------------------");
+                System.out.println("   1   | quadratic formula");
+                System.out.println("   2   | pythagorean therom");
+                System.out.println("   0   | exit");
                 System.out.print("input program:");
                 programNum = in.nextInt();
                 if (programNum != 0 && programNum != 1 && programNum != 2) {
