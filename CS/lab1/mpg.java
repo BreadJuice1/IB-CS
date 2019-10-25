@@ -20,7 +20,7 @@ class mpg {
         // math
         Double distance = endodometer - startodometer;
         Double fuelused = startfuel - endfuel;
-        Double mpg = fuelused / distance;
+        Double mpg = distance / fuelused;
 
         // return mpg
         System.out.println("mpg is " + mpg);

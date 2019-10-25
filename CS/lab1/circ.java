@@ -6,11 +6,11 @@ class circ {
         Scanner in = new Scanner(System.in);
         Double circ;
         System.out.print("Input the radius:");
-        in.close();
         Double radius = in.nextDouble();
+        in.close();
 
         circ = ((2) * (3.14159) * (radius));
-        System.out.print("the circumference is" + circ);
+        System.out.print("the circumference is " + circ);
 
     }
 }
