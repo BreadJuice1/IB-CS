@@ -127,7 +127,7 @@ class lab4 {
     } // lcm
     
     public static void gcd() {
-
+        
     } // gcd
 
     public static void main(String[] args) {
