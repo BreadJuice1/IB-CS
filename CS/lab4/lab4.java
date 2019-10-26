@@ -113,20 +113,17 @@ class lab4 {
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
-        int LCM = 0;
-        Boolean found = false;
+        int LCM = (num1 > num2) ? num1 : num2;
 
-        while (found == false) {
-            LCM++;
+        while (true) {
 
-            if ((LCM / num1) % 1 == 0 && (LCM / num2) % 1 == 0) {
+            if ((LCM %num1) == 0 && (LCM % num2 == 0)) {
                 System.out.print("the LCM is " + LCM);
-                found = true;
+                break;
+            } else {
+                LCM++;
             }
         }
-        System.out.print(LCM);
-
-        in.close();
     } // Lcm
 
     public static void main(String[] args) {
