@@ -124,7 +124,11 @@ class lab4 {
                 LCM++;
             }
         }
-    } // Lcm
+    } // lcm
+    
+    public static void gcd() {
+
+    } // gcd
 
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
