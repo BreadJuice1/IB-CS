@@ -154,7 +154,7 @@ class lab4 {
         // iterations 
             // x1 = (x0 + S / x0) / 2
         while (true) {
-            
+            guess = (guess + S / guess) /2
         }
 
     } // sqrt
