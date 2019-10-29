@@ -152,10 +152,11 @@ class lab4 {
         guess = Math.pow(1, Math.round(length / 2));
         
         // iterations 
-            // x1 = (x0 + S / x0) / 2
-        while (true) {
-            guess = (guess + S / guess) /2
+        while (counter <= iterations) {
+            guess = (guess + num / guess) /2;
+            counter++;
         }
+            System.out.print("the square root is " + guess);
 
     } // sqrt
 
