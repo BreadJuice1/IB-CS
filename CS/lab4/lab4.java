@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 import java.lang.Math;
 
 class lab4 {
@@ -113,7 +113,6 @@ class lab4 {
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
-        in.close();
         int LCM = (num1 > num2) ? num1 : num2;
         int gcd = 1;
 
@@ -138,22 +137,23 @@ class lab4 {
     } // lcm
 
     public static void sqrt() {
-        Scanner in = new Scanner(system.in);
+        Scanner in = new Scanner(System.in);
         System.out.print("input a number: ");
         int num = in.nextInt();
         System.out.print("input the number of iterations: ");
         int iterations = in.nextInt();
 
         // initial guess
-        int guess;
+        double guess;
         int length;
 
-        length = Integer.valueOf(num).toString().length();
-        guess = Math.pow(1, Math.round(length / 2));
+        length = Double.valueOf(num).toString().length();
+        guess = Math.pow(1, (length / 2));
         
-        // iterations 
+        // iterations
+        int counter = 1;
         while (counter <= iterations) {
-            guess = (guess + num / guess) /2;
+            guess = (guess + num / guess) / 2;
             counter++;
         }
             System.out.print("the square root is " + guess);
