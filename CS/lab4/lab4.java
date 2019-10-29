@@ -114,21 +114,27 @@ class lab4 {
         int num1 = in.nextInt();
         int num2 = in.nextInt();
         int LCM = (num1 > num2) ? num1 : num2;
+        int gcd = 1;
 
+        // LCM
         while (true) {
 
-            if ((LCM %num1) == 0 && (LCM % num2 == 0)) {
+            if ((LCM % num1) == 0 && (LCM % num2 == 0)) {
                 System.out.print("the LCM is " + LCM);
                 break;
             } else {
                 LCM++;
             }
         }
+
+        // GCD
+        for (int i = 1; i <= num1 && i <= num2; i++) {
+            if (num1 % i == 0 && num2 % i == 0)
+                gcd = i;
+        }
+        System.out.print("\n the GCD is " + gcd);
+
     } // lcm
-    
-    public static void gcd() {
-        
-    } // gcd
 
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
