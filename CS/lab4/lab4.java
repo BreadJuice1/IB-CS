@@ -154,6 +154,7 @@ class lab4 {
         int counter = 1;
         while (counter <= iterations) {
             guess = (guess + num / guess) / 2;
+            System.out.println(guess);
             counter++;
         }
             System.out.print("the square root is " + guess);
