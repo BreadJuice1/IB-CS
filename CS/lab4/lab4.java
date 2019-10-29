@@ -113,6 +113,7 @@ class lab4 {
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
+        in.close();
         int LCM = (num1 > num2) ? num1 : num2;
         int gcd = 1;
 
@@ -142,6 +143,7 @@ class lab4 {
         int num = in.nextInt();
         System.out.print("input the number of iterations: ");
         int iterations = in.nextInt();
+        in.close();
 
         // initial guess
         double guess;
