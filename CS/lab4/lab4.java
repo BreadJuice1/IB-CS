@@ -113,6 +113,7 @@ class lab4 {
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
+        in.close();
         int LCM = (num1 > num2) ? num1 : num2;
         int gcd = 1;
 
