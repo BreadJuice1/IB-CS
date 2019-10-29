@@ -137,6 +137,28 @@ class lab4 {
 
     } // lcm
 
+    public static void sqrt() {
+        Scanner in = new Scanner(system.in);
+        System.out.print("input a number: ");
+        int num = in.nextInt();
+        System.out.print("input the number of iterations: ");
+        int iterations = in.nextInt();
+
+        // initial guess
+        int guess;
+        int length;
+
+        length = Integer.valueOf(num).toString().length();
+        guess = Math.pow(1, Math.round(length / 2));
+        
+        // iterations 
+            // x1 = (x0 + S / x0) / 2
+        while (true) {
+            
+        }
+
+    } // sqrt
+
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
         System.out.println("which problem do you want to run?");
@@ -153,6 +175,8 @@ class lab4 {
             reciprocal();
         } else if (prognum == 4) {
             lcm();
+        } else if (prognum == 5) {
+            sqrt();
         }
         program.close();
     } // main
