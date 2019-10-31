@@ -31,6 +31,11 @@ class lab5 {
     } // problem1
 
     public static void main(String[] args) {
+        Scanner prog = new Scanner(System.in);
+        System.out.println("what program do you want to run?");
+        int prognum = prog.nextInt();
+        if (prognum == 1) { one(args); }
+        else if (prognum == 2) { }
 
     }
 } // class
