@@ -27,7 +27,7 @@ class lab5 {
 
         for (int i = start; i <= end; i++) {
             char letter = (char) i;
-            System.out.println(i + letter);
+            System.out.println(letter + i);
         }
     } // problem2
 } // class
