@@ -23,6 +23,6 @@ class lab5 {
     } // problem1
 
     public static void main(String[] args) {
-        System.out.print("which problem do you want to run?")
+        System.out.print("which problem do you want to run?");
     }
 } // class
