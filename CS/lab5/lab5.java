@@ -16,7 +16,7 @@ class charread {
     } // main
 }// charread
 
-class lab5 {
+class two {
     public static void main(String args[]) throws IOException {
         int start = 0;
         int end = 0;
