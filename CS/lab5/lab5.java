@@ -23,7 +23,7 @@ class lab5 {
         System.out.print("input a start letter:");
         start = System.in.read();
         System.out.print("input an end letter:");
-        end = System.in.read();
+        end = System.in.read();h
 
         for (int i = start; i <= end; i++) {
             char letter = (char) i;
