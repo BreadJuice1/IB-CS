@@ -29,5 +29,5 @@ class lab5 {
             char letter = (char) i;
             System.out.println(letter + i);
         }
-    } // problem2
+    } // main
 } // class
