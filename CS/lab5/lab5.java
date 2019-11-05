@@ -36,14 +36,17 @@ class two {
 
 class three {
     public static void main(String[] args) throws IOException {
-        int integer[] = new int[7];
+        int integer[] = new int[6];
 
         System.out.print("input an up to six digit number:");
-        for (int i = 0; i <= 6; i++) {
+        for (int i = 0; i < 6; i++) {
             integer[i] = System.in.read();
         }
 
-        System.out.print(integer[0] - (int) '0');
-        
-    }
-}
+        for (int j = 0; j < 6; j++) {
+            if (integer[j] >= (int) '0') {
+                System.out.print(integer[j] - (int) '0');
+            }
+        }
+    } // main
+} // three
