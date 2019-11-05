@@ -23,10 +23,8 @@ class two {
 
         System.out.print("input a start letter and an end letter:");
         start = System.in.read();
-        startchar = (char) start;
 
         end = System.in.read();
-        endchar = (char) end;
 
         for (int i = start; i <= end; i++) {
             System.out.print(i + " ");
@@ -37,12 +35,14 @@ class two {
 } // class two
 
 class three {
-    public static void main(String[] args) {
-        int integer[] = new int[6];
+    public static void main(String[] args) throws IOException {
+        int integer[] = new int[7];
 
         System.out.print("input an up to six digit number:");
-        for (i = 0; i <= 6; i++) {
+        for (int i = 0; i <= 6; i++) {
             integer[i] = System.in.read();
         }
+
+        System.out.print(integer[0] - (int) '0');
     }
 }
