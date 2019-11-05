@@ -19,15 +19,19 @@ class charread {
 class two {
     public static void main(String args[]) throws IOException {
         int start = 0;
+        char startchar;
         int end = 0;
+        char endchar;
+
         System.out.print("input a start letter:");
         start = System.in.read();
+        startchar = (char) start;
+        System.out.println(startchar);
+
         System.out.print("input an end letter:");
         end = System.in.read();
+        endchar = (char) end;
+        System.out.println(endchar);
 
-        for (int i = start; i <= end; i++) {
-            char letter = (char) i;
-            System.out.println(letter + i);
-        }
     } // main
-} // class
+} // class two
