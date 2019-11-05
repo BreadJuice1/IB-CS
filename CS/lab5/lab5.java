@@ -44,5 +44,6 @@ class three {
         }
 
         System.out.print(integer[0] - (int) '0');
+        
     }
 }
