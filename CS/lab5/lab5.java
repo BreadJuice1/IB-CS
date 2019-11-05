@@ -23,12 +23,11 @@ class two {
         int end = 0;
         char endchar;
 
-        System.out.print("input a start letter:");
+        System.out.print("input a start letter and an end letter:");
         start = System.in.read();
         startchar = (char) start;
         System.out.println(startchar);
 
-        System.out.print("input an end letter:");
         end = System.in.read();
         endchar = (char) end;
         System.out.println(endchar);
