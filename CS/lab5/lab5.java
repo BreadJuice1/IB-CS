@@ -47,11 +47,12 @@ class lab5 {
 
     public static void main(String[] args) throws IOException {
         System.out.print("what problem do you want to run?");
-        if (System.in.read() == 49) {
+        int prognum = System.in.read();
+        if (prognum == 49) {
             one();
-        } else if (System.in.read() == 50) {
+        } else if (prognum == 50) {
             two();
-        } else if (System.in.read() == 51) {
+        } else if (prognum == 51) {
             three();
         }
     }
