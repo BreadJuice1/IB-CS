@@ -1,6 +1,8 @@
 import java.io.*;
 import java.util.*;
 
+// litterasssy tehuaeu just to commit
+
 class lab5 {
     public static void one() throws IOException {
         int charval = 0;
