@@ -1,8 +1,8 @@
 import java.io.*;
 import java.util.*;
 
-class charread {
-    public static void main(String args[]) throws IOException {
+class lab5 {
+    public static void one() throws IOException {
         int charval = 0;
         char mychar;
 
@@ -14,10 +14,8 @@ class charread {
 
         System.out.println("Letter value read was " + charval + " character is " + mychar);
     } // main
-}// charread
 
-class two {
-    public static void main(String args[]) throws IOException {
+    public static void two() throws IOException {
         int start = 0;
         int end = 0;
 
@@ -32,16 +30,29 @@ class two {
         }
 
     } // main
-} // class two
 
-class three {
-    public static void main(String[] args) throws IOException {
+
+
+    public static void three() throws IOException {
         int integer[] = new int[12];
         int sum = 0;
 
         System.out.print("Please enter two numbers separated by a space. Each number should be 6 or fewer digits");
+        
         for (int i = 0; i < 12; i++) {
             integer[i] = System.in.read();
         }
-    } // main
-} // three
+        
+    } // three
+
+    public static void main(String[] args) throws IOException {
+        System.out.print("what problem do you want to run?");
+        if (System.in.read() == 49) {
+            one();
+        } else if (System.in.read() == 50) {
+            two();
+        } else if (System.in.read() == 51) {
+            three();
+        }
+    }
+} // class
