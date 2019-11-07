@@ -13,7 +13,7 @@ class lab5 {
         mychar = (char) charval;
 
         System.out.println("Letter value read was " + charval + " character is " + mychar);
-    } // main
+    } // one
 
     public static void two() throws IOException {
         int start = 0;
@@ -29,7 +29,7 @@ class lab5 {
             System.out.print((char) i + "\n");
         }
 
-    } // main
+    } // two
 
 
 
