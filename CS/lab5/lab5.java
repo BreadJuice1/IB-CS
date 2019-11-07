@@ -37,10 +37,11 @@ class two {
 class three {
     public static void main(String[] args) throws IOException {
         int integer[] = new int[12];
+        int sum = 0;
 
         System.out.print("Please enter two numbers separated by a space. Each number should be 6 or fewer digits");
         for (int i = 0; i < 12; i++) {
             integer[i] = System.in.read();
-        }   
+        }
     } // main
 } // three
