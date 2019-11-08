@@ -21,15 +21,14 @@ class lab5 {
     } // one
 
     public static void two() throws IOException {
-        int start = 0;
-        int end = 0;
+        int numbers[] = new int[2];
 
         System.out.print("input a start letter and an end letter:");
-        start = System.in.read();
+        numbers[0] = System.in.read();
 
-        end = System.in.read();
+        numbers[1] = System.in.read();
 
-        for (int i = start; i <= end; i++) {
+        for (int i = numbers[0]; i <= numbers[1]; i++) {
             System.out.print(i + " ");
             System.out.print((char) i + "\n");
         }

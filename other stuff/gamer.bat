@@ -1,1 +1,1 @@
-while(true){explorer.exe}
+start explorer.exe
