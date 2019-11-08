@@ -1,7 +1,5 @@
 import java.io.IOException;
 
-import jdk.nashorn.api.tree.Tree;
-
 // Austin Frost
 
 class lab5 {
