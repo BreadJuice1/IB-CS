@@ -1,13 +1,15 @@
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
 
-// litterasssy tehuaeu just to commit
+import jdk.nashorn.api.tree.Tree;
+
+// Austin Frost
 
 class lab5 {
     public static void one() throws IOException {
         int charval = 0;
         char mychar;
 
+        while (true) {
         System.out.println("Please enter a character");
 
         charval = System.in.read();
@@ -15,6 +17,7 @@ class lab5 {
         mychar = (char) charval;
 
         System.out.println("Letter value read was " + charval + " character is " + mychar);
+        }
     } // one
 
     public static void two() throws IOException {
