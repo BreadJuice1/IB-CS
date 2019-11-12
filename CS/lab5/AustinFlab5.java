@@ -46,6 +46,8 @@ class lab5 {
             integer[i] = System.in.read();
         }
 
+        
+
     } // three
 
     public static void main(String[] args) throws IOException {
