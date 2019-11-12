@@ -120,11 +120,10 @@ class lab4 {
         int gcd = 1;
 
         // LCM
-        while (true) {
+        while (!((LCM % num1) == 0 && (LCM % num2 == 0))) {
 
             if ((LCM % num1) == 0 && (LCM % num2 == 0)) {
                 System.out.print("the LCM is " + LCM);
-                break;
             } else {
                 LCM++;
             }
