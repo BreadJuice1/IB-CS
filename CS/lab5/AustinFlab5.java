@@ -47,7 +47,7 @@ class lab5 {
         }
 
         while (sum != 0) {
-            
+        
         }
 
     } // three
