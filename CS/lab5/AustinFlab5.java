@@ -49,13 +49,15 @@ class lab5 {
 
     public static void main(String[] args) throws IOException {
         System.out.print("what problem do you want to run?");
-        int prognum = System.in.read();
-        if (prognum == 49) {
-            one();
-        } else if (prognum == 50) {
-            two();
-        } else if (prognum == 51) {
-            three();
+        int prognum = (System.in.read() - 48);
+        
+        switch (prognum) {
+            case 1: one();
+                    break;
+            case 2: two();
+                    break;
+            case 3: three();
+                    break;
         }
     }
 } // class

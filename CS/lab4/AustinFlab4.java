@@ -1,6 +1,8 @@
 import java.util.Scanner;
 import java.lang.Math;
 
+// Austin Frost
+
 class lab4 {
     public static void sigma() {
         Scanner in = new Scanner(System.in);
