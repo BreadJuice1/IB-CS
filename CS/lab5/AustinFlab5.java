@@ -46,7 +46,9 @@ class lab5 {
             integer[i] = System.in.read();
         }
 
-        
+        while (sum != 0) {
+            
+        }
 
     } // three
 
