@@ -5,7 +5,7 @@ import java.io.IOException;
 class lab5 {
     public static void one() throws IOException {
         int charval = 0;
-        char mychar;
+        char mychar = 0;
 
         while (true) {
         System.out.println("Please enter a character");
