@@ -8,15 +8,15 @@ class lab5 {
         char mychar = 0;
 
         while (true) {
-        System.out.println("Please enter a character");
+            System.out.println("Please enter a character");
 
-        charval = System.in.read();
-        
-        if (charval > 31) 
+            charval = System.in.read();
 
-        mychar = (char) charval;
+            if (charval > 31)
 
-        System.out.println("Letter value read was " + charval + " character is " + mychar);
+                mychar = (char) charval;
+
+            System.out.println("Letter value read was " + charval + " character is " + mychar);
         }
     } // one
 
@@ -35,31 +35,32 @@ class lab5 {
 
     } // two
 
-
-
     public static void three() throws IOException {
         int integer[] = new int[12];
         int sum = 0;
 
         System.out.print("Please enter two numbers separated by a space. Each number should be 6 or fewer digits");
-        
+
         for (int i = 0; i < 12; i++) {
             integer[i] = System.in.read();
         }
-        
+
     } // three
 
     public static void main(String[] args) throws IOException {
         System.out.print("what problem do you want to run?");
         int prognum = (System.in.read() - 48);
-        
+
         switch (prognum) {
-            case 1: one();
-                    break;
-            case 2: two();
-                    break;
-            case 3: three();
-                    break;
+        case 1:
+            one();
+            break;
+        case 2:
+            two();
+            break;
+        case 3:
+            three();
+            break;
         }
     }
 } // class
