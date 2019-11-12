@@ -11,10 +11,13 @@ class lab5 {
         System.out.println("Please enter a character");
 
         charval = System.in.read();
+        
+        if (charval > 31) { 
 
         mychar = (char) charval;
 
         System.out.println("Letter value read was " + charval + " character is " + mychar);
+            }
         }
     } // one
 
