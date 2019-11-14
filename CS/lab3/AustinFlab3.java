@@ -55,17 +55,17 @@ class lab3 {
 
                 if (programNum == 2) {
 
-                    // get a and b
+                    // get vars
                     Scanner nums = new Scanner(System.in);
-                    System.out.print("input a:");
+                        System.out.println("input each side length (use -1 to show the unknown)");
                     Double a = nums.nextDouble();
-                    System.out.print("input b:");
                     Double b = nums.nextDouble();
+                    Double c = nums.nextDouble();
                     nums.close();
 
                     // math
                     Double cSquared = (a * a) + (b * b);
-                    Double c = Math.sqrt(cSquared);
+                    c = Math.sqrt(cSquared);
 
                     // return answers
                     System.out.print("c = " + c);
@@ -78,7 +78,6 @@ class lab3 {
                 } // program 3
             } catch (Exception e) {
                 System.out.print("please input a number.");
-                System.exit(0);
             }
         } while (programNum != 0);
         in.close();
