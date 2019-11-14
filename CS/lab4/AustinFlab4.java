@@ -22,7 +22,7 @@ class lab4 {
         } // for
 
         System.out.print("=" + sum);
-        
+
     } // sigma
 
     public static void grades() {
@@ -100,7 +100,6 @@ class lab4 {
                 String ans = in.next();
                 if (ans.contains("y")) {
                     System.out.print(sum);
-                    System.exit(0);
                 }
             } else {
                 recip = 1 / num;
@@ -153,7 +152,7 @@ class lab4 {
 
         length = Double.valueOf(num).toString().length();
         guess = Math.pow(1, (length / 2));
-        
+
         // iterations
         int counter = 1;
         while (counter <= iterations) {
@@ -161,32 +160,36 @@ class lab4 {
             System.out.println(guess);
             counter++;
         }
-            System.out.print("the square root is " + guess);
+        System.out.print("the square root is " + guess);
 
     } // sqrt
 
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
         int prognum;
-        
-        while(true) {
-            System.out.println("which problem do you want to run?");
 
-            prognum = program.nextInt();
+        System.out.println("which problem do you want to run?");
 
-            if (prognum == 0) {
-                System.exit(0);
-            } else if (prognum == 1) {
-                sigma();
-            } else if (prognum == 2) {
-                grades();
-            } else if (prognum == 3) {
-                reciprocal();
-            } else if (prognum == 4) {
-                lcm();
-            } else if (prognum == 5) {
-                sqrt();
-            }
-        } // while
+        prognum = program.nextInt();
+
+        switch (prognum) {
+        case 1:
+            sigma();
+            break;
+        case 2:
+            grades();
+            break;
+        case 3:
+            reciprocal();
+            break;
+        case 4:
+            lcm();
+            break;
+        case 5:
+            sqrt();
+            break;
+        }
+
+
     } // main
 } // class
