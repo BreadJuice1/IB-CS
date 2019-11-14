@@ -31,7 +31,7 @@ class lab4 {
         int grade = 0;
         int average = 0;
         int counter = 0;
-        String averageGrade = "bruh";
+        String averageGrade = "";
         int amountA = 0;
         int amountB = 0;
         int amountC = 0;
