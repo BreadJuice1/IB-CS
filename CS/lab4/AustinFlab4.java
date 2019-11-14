@@ -15,13 +15,14 @@ class lab4 {
         for (double i = 1; i <= num; i++) {
             sum = sum + i;
             if (i < num) {
-                System.out.print(i + "+" + "/n");
+                System.out.print(i + " +" + " ");
             } else {
                 System.out.print(i);
             }
         } // for
 
         System.out.print("=" + sum);
+        
     } // sigma
 
     public static void grades() {
@@ -174,14 +175,19 @@ class lab4 {
             System.exit(0);
         } else if (prognum == 1) {
             sigma();
+            main(args);
         } else if (prognum == 2) {
             grades();
+            main(args);
         } else if (prognum == 3) {
             reciprocal();
+            main(args);
         } else if (prognum == 4) {
             lcm();
+            main(args);
         } else if (prognum == 5) {
             sqrt();
+            main(args);
         }
         program.close();
     } // main
