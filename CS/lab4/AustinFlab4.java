@@ -172,7 +172,7 @@ class lab4 {
 
             System.out.println("which problem do you want to run?");
 
-            prognum = extracted(program);
+            prognum = program.nextInt();
 
             switch (prognum) {
             case 1:
@@ -192,7 +192,6 @@ class lab4 {
                 break;
             } // switch
         } // while
-
     } // main
 
     private static int extracted(Scanner program) {
