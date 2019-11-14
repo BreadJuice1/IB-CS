@@ -167,28 +167,25 @@ class lab4 {
 
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
-        System.out.println("which problem do you want to run?");
+        
+        while(true) {
+            System.out.println("which problem do you want to run?");
 
-        int prognum = program.nextInt();
+            int prognum = program.nextInt();
 
-        if (prognum == 0) {
-            System.exit(0);
-        } else if (prognum == 1) {
-            sigma();
-            main(args);
-        } else if (prognum == 2) {
-            grades();
-            main(args);
-        } else if (prognum == 3) {
-            reciprocal();
-            main(args);
-        } else if (prognum == 4) {
-            lcm();
-            main(args);
-        } else if (prognum == 5) {
-            sqrt();
-            main(args);
-        }
-        program.close();
+            if (prognum == 0) {
+                System.exit(0);
+            } else if (prognum == 1) {
+                sigma();
+            } else if (prognum == 2) {
+                grades();
+            } else if (prognum == 3) {
+                reciprocal();
+            } else if (prognum == 4) {
+                lcm();
+            } else if (prognum == 5) {
+                sqrt();
+            }
+        } // while
     } // main
 } // class
