@@ -167,11 +167,12 @@ class lab4 {
 
     public static void main(String[] args) {
         Scanner program = new Scanner(System.in);
+        int prognum;
         
         while(true) {
             System.out.println("which problem do you want to run?");
 
-            int prognum = program.nextInt();
+            prognum = program.nextInt();
 
             if (prognum == 0) {
                 System.exit(0);
