@@ -41,7 +41,7 @@ class lab4 {
         do {
             System.out.print("input grade:");
 
-            grade = grades.nextInt();
+            grade = extracted(grades);
 
             if (grade != -1) {
                 average = (average * counter + grade) / (counter + 1);
@@ -172,7 +172,7 @@ class lab4 {
 
             System.out.println("which problem do you want to run?");
 
-            prognum = program.nextInt();
+            prognum = extracted(program);
 
             switch (prognum) {
             case 1:
@@ -190,8 +190,14 @@ class lab4 {
             case 5:
                 sqrt();
                 break;
-            }
-        }
+            } // switch
+        } // while
 
     } // main
+
+    private static int extracted(Scanner program) {
+        int prognum;
+        prognum = program.nextInt();
+        return prognum;
+    }
 } // class
