@@ -193,10 +193,4 @@ class lab4 {
             } // switch
         } // while
     } // main
-
-    private static int extracted(Scanner program) {
-        int prognum;
-        prognum = program.nextInt();
-        return prognum;
-    }
 } // class
