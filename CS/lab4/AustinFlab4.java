@@ -168,28 +168,30 @@ class lab4 {
         Scanner program = new Scanner(System.in);
         int prognum;
 
-        System.out.println("which problem do you want to run?");
+        while (true) {
 
-        prognum = program.nextInt();
+            System.out.println("which problem do you want to run?");
 
-        switch (prognum) {
-        case 1:
-            sigma();
-            break;
-        case 2:
-            grades();
-            break;
-        case 3:
-            reciprocal();
-            break;
-        case 4:
-            lcm();
-            break;
-        case 5:
-            sqrt();
-            break;
+            prognum = program.nextInt();
+
+            switch (prognum) {
+            case 1:
+                sigma();
+                break;
+            case 2:
+                grades();
+                break;
+            case 3:
+                reciprocal();
+                break;
+            case 4:
+                lcm();
+                break;
+            case 5:
+                sqrt();
+                break;
+            }
         }
-
 
     } // main
 } // class
