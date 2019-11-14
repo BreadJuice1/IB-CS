@@ -54,22 +54,32 @@ class lab3 {
                 } // program 1
 
                 if (programNum == 2) {
+                    Double cSquared = 0;
 
                     // get vars
                     Scanner nums = new Scanner(System.in);
-                        System.out.println("input each side length (use -1 to show the unknown)");
+                    System.out.println("input each side length (use -1 to show the unknown)");
                     Double a = nums.nextDouble();
                     Double b = nums.nextDouble();
                     Double c = nums.nextDouble();
                     nums.close();
 
                     // math
-                    Double cSquared = (a * a) + (b * b);
-                    c = Math.sqrt(cSquared);
-
-                    // return answers
-                    System.out.print("c = " + c);
-                    break;
+                    if (c == -1) {
+                        cSquared = (a * a) + (b * b);
+                        c = Math.sqrt(cSquared);
+                        System.out.println("the unknown is " + c);
+                    } // c
+                    if (a == -1) {
+                        cSquared = (b * b) + (c * c);
+                        a = Math.sqrt(cSquared);
+                        System.out.println("the unknown is " + a);
+                    } // a
+                    if (b == -1) {
+                        cSquared = (a * a) + (c * c);
+                        c = Math.sqrt(cSquared);
+                        System.out.println("the unknown is " + b);
+                    }
 
                 } // program 2
 
