@@ -48,13 +48,12 @@ class lab5 {
             integer[i] = System.in.read();
         }
 
-        int counter = 0;
+        int counter[] = newint [2];
+        counter[1] 
         do {
           number1 += Math.pow(integer[counter], (6-counter));
           counter++;
         } while (integer[counter] > 47);
-
-        counter = 0;
 
         do {
           number2 += Math.pow(integer[counter], (6-counter));
