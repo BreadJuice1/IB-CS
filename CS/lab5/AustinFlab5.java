@@ -37,18 +37,16 @@ class lab5 {
     } // two
 
     public static void three() throws IOException {
-        int integer[] = new int[12];
+        int integer[] = new int[13];
         int sum = 0;
 
         System.out.print("Please enter two numbers separated by a space. Each number should be 6 or fewer digits");
 
-        for (int i = 0; i < 12; i++) {
+        for (int i = 0; i < 13; i++) {
             integer[i] = System.in.read();
         }
 
-        while (sum != 0) {
         
-        }
 
     } // three
 

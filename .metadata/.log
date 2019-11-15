@@ -1,0 +1,327 @@
+!SESSION 2019-11-15 18:52:12.646 -----------------------------------------------
+eclipse.buildId=unknown
+java.version=11.0.4
+java.vendor=Ubuntu
+BootLoader constants: OS=linux, ARCH=x86_64, WS=gtk, NL=en_US
+Command-line arguments:  -data /home/runner
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:25.032
+!MESSAGE class org.eclipse.jdt.ls.core.internal.JavaLanguageServerPlugin is started
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:26.093
+!MESSAGE Main thread is waiting
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:26.260
+!MESSAGE >> initialize
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:26.266
+!MESSAGE Initializing Java Language Server 0.21.0.201806152234
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:26.672
+!MESSAGE >> initialized
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:27.061
+!MESSAGE Creating the default Java project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:29.372
+!MESSAGE Finished creating the default Java project
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:49.678
+!MESSAGE Importing Eclipse project(s)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:49.977
+!MESSAGE Workspace initialized in 23705ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:50.173
+!MESSAGE >> java/buildWorkspace (full)
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:52:50.267
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:01.894
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///home/runner/Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:07.960
+!MESSAGE >> document/didOpen
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:14.260
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:14.261
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:14.268
+!MESSAGE Reconciled 0, validated: 1. Took 6302 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:14.471
+!MESSAGE Classpath is incomplete. Only syntax errors will be reported for file:///home/runner/CS/lab5/AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:14.776
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:14.972
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.383
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.384
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.589
+!MESSAGE begin problem for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.589
+!MESSAGE 0 problems reported for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.590
+!MESSAGE Reconciled 0, validated: 2. Took 807 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.665
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:17.671
+!MESSAGE >> document/completion
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:20.297
+!MESSAGE Completion request completed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:20.483
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:21.176
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:21.177
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:21.869
+!MESSAGE begin problem for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:21.874
+!MESSAGE 2 problems reported for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:21.958
+!MESSAGE Reconciled 0, validated: 2. Took 2864 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.176
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.268
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.277
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.359
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.571
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.573
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.576
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:22.663
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:23.776
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:23.777
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.080
+!MESSAGE begin problem for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.082
+!MESSAGE The value of the local variable sum is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.082
+!MESSAGE 1 problems reported for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.083
+!MESSAGE Reconciled 0, validated: 2. Took 1596 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.187
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.271
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.282
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.467
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.469
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.476
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.574
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.659
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.661
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.667
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.670
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.771
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.775
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.776
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.778
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.780
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.974
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:24.976
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.060
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.063
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.067
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.070
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.258
+!MESSAGE >> document/documentHighlight
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.260
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:25.261
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:26.584
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:26.678
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.160
+!MESSAGE begin problem for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.161
+!MESSAGE The value of the local variable sum is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.161
+!MESSAGE 1 problems reported for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.161
+!MESSAGE Reconciled 0, validated: 2. Took 1892 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.285
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.363
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.366
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.379
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.381
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.462
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.464
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.476
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.571
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.572
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:27.760
+!MESSAGE >> document/didChange
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.260
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.261
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.681
+!MESSAGE begin problem for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.682
+!MESSAGE The value of the local variable sum is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.682
+!MESSAGE 1 problems reported for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.683
+!MESSAGE Reconciled 0, validated: 2. Took 1513 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.763
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.768
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.859
+!MESSAGE >> document/hover
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.863
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:29.958
+!MESSAGE >> document/codeAction
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:30.961
+!MESSAGE begin problem for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:30.961
+!MESSAGE 0 problems reported for /Main.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:31.167
+!MESSAGE begin problem for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:31.168
+!MESSAGE The value of the local variable sum is not used is of type LocalVariableIsNeverUsed
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:31.168
+!MESSAGE 1 problems reported for /AustinFlab5.java
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:31.169
+!MESSAGE Reconciled 0, validated: 2. Took 1003 ms
+
+!ENTRY org.eclipse.jdt.ls.core 1 0 2019-11-15 18:53:31.460
+!MESSAGE >> document/codeAction
