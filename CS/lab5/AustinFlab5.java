@@ -38,8 +38,8 @@ class lab5 {
 
     public static void three() throws IOException {
         int integer[] = new int[13];
-        int number1;
-        int number2;
+        int number1 = 0;
+        int number2 = 0;
         int sum = 0;
 
         System.out.print("Please enter two numbers separated by a space. Each number should be 6 or fewer digits");
@@ -50,7 +50,7 @@ class lab5 {
 
         int counter = 0;
         do {
-          sum += Math.pow(integer[counter], (6-counter));
+          number1 += Math.pow(integer[counter], (6-counter));
 
         } while (integer[counter] > 47);
 
