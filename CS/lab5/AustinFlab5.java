@@ -50,7 +50,7 @@ class lab5 {
 
         int counter = 0;
         do {
-          
+          sum += Math.pow(integer[counter], (6-counter));
 
         } while (integer[counter] > 47);
 
