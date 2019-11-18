@@ -7,11 +7,13 @@ class lab3 {
     public static void main(String[] args) {
 
         Scanner in = new Scanner(System.in);
-
         int programNum = -1;
 
+        while(programNum != 0) {
+
+        programNum = -1;
+
             // check program
-            try {
                 System.out.println("number | program");
                 System.out.println("-------|-------------------");
                 System.out.println("   1   | quadratic formula");
@@ -19,15 +21,6 @@ class lab3 {
                 System.out.println("   0   | exit");
                 System.out.print("input program:");
                 programNum = in.nextInt();
-                if (programNum != 0 && programNum != 1 && programNum != 2) {
-                    System.out.println("number | program");
-                    System.out.println("-------|-------------------");
-                    System.out.println("   1   | quadratic formula");
-                    System.out.println("   2   | pythagorean therom");
-                    System.out.println("   0   | exit");
-
-                    programNum = -1;
-                }
 
                 if (programNum == 1) {
 
@@ -80,13 +73,6 @@ class lab3 {
                     } // c
 
                 } // program 2
-
-                if (programNum == 0) {
-                    System.exit(0);
-                } // program 3
-            } catch (Exception e) {
-                System.out.print("please input a number.");
-            }
-        in.close();
+        } // menu
     } // main
 } // class
