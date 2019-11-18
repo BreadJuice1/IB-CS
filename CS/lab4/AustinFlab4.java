@@ -5,11 +5,10 @@ import java.lang.Math;
 
 class lab4 {
     public static void sigma() {
-        Scanner in = new Scanner(System.in);
 
         System.out.print("input number:");
         double num = in.nextDouble();
-        in.close();
+
 
         double sum = 0;
         for (double i = 1; i <= num; i++) {
@@ -26,7 +25,6 @@ class lab4 {
     } // sigma
 
     public static void grades() {
-        Scanner grades = new Scanner(System.in);
 
         int grade = 0;
         int average = 0;
@@ -86,8 +84,6 @@ class lab4 {
 
     public static void reciprocal() {
 
-        Scanner in = new Scanner(System.in);
-
         double num = 0;
         double sum = 0;
         double recip = 0;
@@ -107,15 +103,12 @@ class lab4 {
                 System.out.println(sum);
             }
         }
-        in.close();
-    } // reciprocal
 
+    } // reciprocal
     public static void lcm() {
-        Scanner in = new Scanner(System.in);
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
-        in.close();
         int LCM = (num1 > num2) ? num1 : num2;
         int gcd = 1;
 
@@ -139,12 +132,11 @@ class lab4 {
     } // lcm
 
     public static void sqrt() {
-        Scanner in = new Scanner(System.in);
         System.out.print("input a number: ");
         int num = in.nextInt();
         System.out.print("input the number of iterations: ");
         int iterations = in.nextInt();
-        in.close();
+
 
         // initial guess
         double guess;
@@ -165,14 +157,14 @@ class lab4 {
     } // sqrt
 
     public static void main(String[] args) {
-        Scanner program = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
         int prognum;
 
         while (true) {
 
             System.out.println("which problem do you want to run?");
 
-            prognum = program.nextInt();
+            prognum = in.nextInt();
 
             switch (prognum) {
             case 1:
