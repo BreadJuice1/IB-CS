@@ -54,7 +54,7 @@ class lab3 {
                 } // program 1
 
                 if (programNum == 2) {
-                    Double cSquared = 0;
+                    Double cSquared = 0.0;
 
                     // get vars
                     Scanner nums = new Scanner(System.in);

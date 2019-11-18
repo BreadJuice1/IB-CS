@@ -41,7 +41,7 @@ class lab4 {
         do {
             System.out.print("input grade:");
 
-            grade = extracted(grades);
+            grade = grades.nextInt();
 
             if (grade != -1) {
                 average = (average * counter + grade) / (counter + 1);
