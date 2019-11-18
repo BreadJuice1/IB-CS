@@ -1,78 +1,77 @@
-import java.util.InputMismatchException;
 import java.util.Scanner;
-
 import java.lang.Math;
 
 class lab3 {
     public static void main(String[] args) {
 
-        Scanner in = new Scanner(System.in);
         int programNum = -1;
 
-        while(programNum != 0) {
+        while (programNum != 0) {
 
-        programNum = -1;
+            programNum = -1;
+
+            Scanner in = new Scanner(System.in);
 
             // check program
-                System.out.println("number | program");
-                System.out.println("-------|-------------------");
-                System.out.println("   1   | quadratic formula");
-                System.out.println("   2   | pythagorean therom");
-                System.out.println("   0   | exit");
-                System.out.print("input program:");
-                programNum = in.nextInt();
+            System.out.println("number | program");
+            System.out.println("-------|-------------------");
+            System.out.println("   1   | quadratic formula");
+            System.out.println("   2   | pythagorean therom");
+            System.out.println("   0   | exit");
+            System.out.print("input program:");
+            programNum = in.nextInt();
 
-                if (programNum == 1) {
+            if (programNum == 1) {
 
-                    // get a, b, and c
-                    Scanner nums = new Scanner(System.in);
-                    System.out.print("input a:");
-                    Double a = nums.nextDouble();
-                    System.out.print("input b:");
-                    Double b = nums.nextDouble();
-                    System.out.print("input c:");
-                    Double c = nums.nextDouble();
-                    nums.close();
+                // get a, b, and c
+                Scanner nums = new Scanner(System.in);
+                System.out.print("input a:");
+                Double a = nums.nextDouble();
+                System.out.print("input b:");
+                Double b = nums.nextDouble();
+                System.out.print("input c:");
+                Double c = nums.nextDouble();
+                nums.close();
 
-                    // math
-                    double x1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
-                    double x2 = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+                // math
+                double x1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
+                double x2 = (-b - Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
 
-                    if (Double.isNaN(x1) || Double.isNaN(x2)) {
-                        System.out.println("x is an imaginary number");
-                    } else
-                        System.out.println("The values are: " + x1 + ", " + x2);
-                } // program 1
+                if (Double.isNaN(x1) || Double.isNaN(x2)) {
+                    System.out.println("x is an imaginary number");
+                } else
+                    System.out.println("The values are: " + x1 + ", " + x2);
+            } // program 1
 
-                if (programNum == 2) {
-                    Double cSquared = 0.0;
+            if (programNum == 2) {
+                Double cSquared = 0.0;
 
-                    // get vars
-                    Scanner nums = new Scanner(System.in);
-                    System.out.println("input each side length (use -1 to show the unknown)");
-                    Double a = nums.nextDouble();
-                    Double b = nums.nextDouble();
-                    Double c = nums.nextDouble();
-                    nums.close();
+                // get vars
+                Scanner nums = new Scanner(System.in);
+                System.out.println("input each side length (use -1 to show the unknown)");
+                Double a = nums.nextDouble();
+                Double b = nums.nextDouble();
+                Double c = nums.nextDouble();
+                nums.close();
 
-                    // math
-                    if (a == -1) {
-                        cSquared = (c * c) - (b * b);
-                        a = Math.sqrt(cSquared);
-                        System.out.println("the unknown is " + a);
-                    } // a
-                    if (b == -1) {
-                        cSquared = (c * c) - (a * a);
-                        b = Math.sqrt(cSquared);
-                        System.out.println("the unknown is " + b);
-                    } // b
-                    if (c == -1) {
-                        cSquared = (a * a) + (b * b);
-                        c = Math.sqrt(cSquared);
-                        System.out.println("the unknown is " + c);
-                    } // c
+                // math
+                if (a == -1) {
+                    cSquared = (c * c) - (b * b);
+                    a = Math.sqrt(cSquared);
+                    System.out.println("the unknown is " + a);
+                } // a
+                if (b == -1) {
+                    cSquared = (c * c) - (a * a);
+                    b = Math.sqrt(cSquared);
+                    System.out.println("the unknown is " + b);
+                } // b
+                if (c == -1) {
+                    cSquared = (a * a) + (b * b);
+                    c = Math.sqrt(cSquared);
+                    System.out.println("the unknown is " + c);
+                } // c
 
-                } // program 2
+            } // program 2
         } // menu
     } // main
 } // class
