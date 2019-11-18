@@ -10,7 +10,6 @@ class lab3 {
 
         int programNum = -1;
 
-        do {
             // check program
             try {
                 System.out.println("number | program");
@@ -50,7 +49,6 @@ class lab3 {
                         System.out.println("x is an imaginary number");
                     } else
                         System.out.println("The values are: " + x1 + ", " + x2);
-                    break;
                 } // program 1
 
                 if (programNum == 2) {
@@ -89,7 +87,6 @@ class lab3 {
             } catch (Exception e) {
                 System.out.print("please input a number.");
             }
-        } while (programNum != 0);
         in.close();
     } // main
 } // class
