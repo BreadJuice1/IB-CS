@@ -74,7 +74,7 @@ class lab3 {
                         System.out.println("the unknown is " + b);
                     } // b
                     if (c == -1) {
-                        cSquared = (c * c) - (a * a);
+                        cSquared = (a * a) + (b * b);
                         c = Math.sqrt(cSquared);
                         System.out.println("the unknown is " + b);
                     } // c
