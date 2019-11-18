@@ -3,13 +3,10 @@ import java.lang.Math;
 
 class lab3 {
     public static void main(String[] args) {
+        boolean run_again = true;
+        int user_input = 0;
 
-        int programNum = -1;
-
-        while (programNum != 0) {
-
-            programNum = -1;
-
+        while (run_again == true) {
             Scanner in = new Scanner(System.in);
 
             // check program
@@ -17,21 +14,20 @@ class lab3 {
             System.out.println("-------|-------------------");
             System.out.println("   1   | quadratic formula");
             System.out.println("   2   | pythagorean therom");
-            System.out.println("   0   | exit");
+            System.out.println("  -1   | exit");
             System.out.print("input program:");
-            programNum = in.nextInt();
+            user_input = in.nextInt();
 
-            if (programNum == 1) {
+            if (user_input == 1) {
 
                 // get a, b, and c
-                Scanner nums = new Scanner(System.in);
                 System.out.print("input a:");
-                Double a = nums.nextDouble();
+                Double a = in.nextDouble();
                 System.out.print("input b:");
-                Double b = nums.nextDouble();
+                Double b = in.nextDouble();
                 System.out.print("input c:");
-                Double c = nums.nextDouble();
-                nums.close();
+                Double c = in.nextDouble();
+                in.close();
 
                 // math
                 double x1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
@@ -43,16 +39,15 @@ class lab3 {
                     System.out.println("The values are: " + x1 + ", " + x2);
             } // program 1
 
-            if (programNum == 2) {
+            if (user_input == 2) {
                 Double cSquared = 0.0;
 
                 // get vars
-                Scanner nums = new Scanner(System.in);
                 System.out.println("input each side length (use -1 to show the unknown)");
-                Double a = nums.nextDouble();
-                Double b = nums.nextDouble();
-                Double c = nums.nextDouble();
-                nums.close();
+                Double a = in.nextDouble();
+                Double b = in.nextDouble();
+                Double c = in.nextDouble();
+                in.close();
 
                 // math
                 if (a == -1) {
@@ -72,6 +67,9 @@ class lab3 {
                 } // c
 
             } // program 2
+            else {
+                run_again = false;
+            }
         } // menu
     } // main
 } // class
