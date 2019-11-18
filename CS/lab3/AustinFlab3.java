@@ -27,7 +27,6 @@ class lab3 {
                 Double b = in.nextDouble();
                 System.out.print("input c:");
                 Double c = in.nextDouble();
-                in.close();
 
                 // math
                 double x1 = (-b + Math.sqrt(Math.pow(b, 2) - (4 * a * c))) / (2 * a);
@@ -47,7 +46,6 @@ class lab3 {
                 Double a = in.nextDouble();
                 Double b = in.nextDouble();
                 Double c = in.nextDouble();
-                in.close();
 
                 // math
                 if (a == -1) {
