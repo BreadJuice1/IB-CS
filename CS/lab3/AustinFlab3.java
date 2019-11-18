@@ -63,21 +63,21 @@ class lab3 {
                     nums.close();
 
                     // math
-                    if (c == -1) {
-                        cSquared = (a * a) + (b * b);
-                        c = Math.sqrt(cSquared);
-                        System.out.println("the unknown is " + c);
-                    } // c
                     if (a == -1) {
-                        cSquared = (b * b) + (c * c);
+                        cSquared = (c * c) - (c * c);
                         a = Math.sqrt(cSquared);
                         System.out.println("the unknown is " + a);
                     } // a
                     if (b == -1) {
-                        cSquared = (a * a) + (c * c);
+                        cSquared = (c * c) - (a * a);
+                        b = Math.sqrt(cSquared);
+                        System.out.println("the unknown is " + b);
+                    } // b
+                    if (c == -1) {
+                        cSquared = (c * c) - (a * a);
                         c = Math.sqrt(cSquared);
                         System.out.println("the unknown is " + b);
-                    }
+                    } // c
 
                 } // program 2
 
