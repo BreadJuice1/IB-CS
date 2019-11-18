@@ -3,11 +3,11 @@ import java.lang.Math;
 
 class lab3 {
     public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
         boolean run_again = true;
         int user_input = 0;
 
         while (run_again == true) {
-            Scanner in = new Scanner(System.in);
 
             // check program
             System.out.println("number | program");
