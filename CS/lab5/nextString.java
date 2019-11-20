@@ -1,7 +1,7 @@
 import java.io.IOException;
 
 class nextString {
-    public static main(String[] args) {
+    public static next() throws IOException {
         int i = 0;
         int code = System.in.read();
         String character[] = new String[12];
@@ -12,5 +12,9 @@ class nextString {
             counter++;
             }
         return nextString;
+    } // next
+
+    public static void main(String[] args) {
+        System.out.print(next());
     } // main
 } // class
