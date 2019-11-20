@@ -9,5 +9,5 @@
 6. [lab 6](https://github.com/BreadJuice1/IB-CS/tree/master/CS/lab6)
 
 ## Gamer Stuff
-### 1. Powershell Scrips
-  1. [gamer](gamer.ps1)
+### 1. [Powershell Scripts](https://github.com/BreadJuice1/IB-CS/tree/master/gamer%20stuff)
+  1. [gamer](https://github.com/BreadJuice1/IB-CS/tree/master/gamer%20stuff/gamer.ps1)
