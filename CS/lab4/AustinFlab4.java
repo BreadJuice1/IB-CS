@@ -4,8 +4,41 @@ import java.lang.Math;
 // Austin Frost
 
 class lab4 {
-    public static void sigma() {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int prognum;
 
+        while (true) {
+
+            System.out.println("\n which problem do you want to run?");
+
+            prognum = in.nextInt();
+
+            switch (prognum) {
+            case 1:
+                sigma();
+                break;
+            case 2:
+                grades();
+                break;
+            case 3:
+                grades();
+                break;
+            case 4:
+                reciprocal();
+                break;
+            case 5:
+                lcm();
+                break;
+            case 6:
+                sqrt();
+                break;
+            } // switch
+        } // while
+    } // main
+
+    public static void sigma() {
+        Scanner in = new Scanner(System.in);
         System.out.print("input number:");
         double num = in.nextDouble();
 
@@ -25,6 +58,7 @@ class lab4 {
     } // sigma
 
     public static void grades() {
+        Scanner in = new Scanner(System.in);
 
         int grade = 0;
         int average = 0;
@@ -39,7 +73,7 @@ class lab4 {
         do {
             System.out.print("input grade:");
 
-            grade = grades.nextInt();
+            grade = in.nextInt();
 
             if (grade != -1) {
                 average = (average * counter + grade) / (counter + 1);
@@ -79,11 +113,11 @@ class lab4 {
         System.out.println(amountD + " students got a D");
         System.out.println(amountF + " students got a F");
 
-        grades.close();
     } // grades
 
     public static void reciprocal() {
 
+        Scanner in = new Scanner(System.in);
         double num = 0;
         double sum = 0;
         double recip = 0;
@@ -106,21 +140,12 @@ class lab4 {
 
     } // reciprocal
     public static void lcm() {
+        Scanner in = new Scanner(System.in);
         System.out.print("plesase input two numbers:");
         int num1 = in.nextInt();
         int num2 = in.nextInt();
         int LCM = (num1 > num2) ? num1 : num2;
         int gcd = 1;
-
-        // LCM
-        while (!((LCM % num1) == 0 && (LCM % num2 == 0))) {
-
-            if ((LCM % num1) == 0 && (LCM % num2 == 0)) {
-                System.out.print("the LCM is " + LCM);
-            } else {
-                LCM++;
-            }
-        }
 
         // GCD
         for (int i = 1; i <= num1 && i <= num2; i++) {
@@ -129,9 +154,14 @@ class lab4 {
         }
         System.out.print("\n the GCD is " + gcd);
 
-    } // lcm
+        // LCM
+        LCM = (num1 * num2)/gcd;
+        System.out.print("\n the LCM is " + LCM);
+
+        } // lcm
 
     public static void sqrt() {
+        Scanner in = new Scanner(System.in);
         System.out.print("input a number: ");
         int num = in.nextInt();
         System.out.print("input the number of iterations: ");
@@ -155,34 +185,4 @@ class lab4 {
         System.out.print("the square root is " + guess);
 
     } // sqrt
-
-    public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
-        int prognum;
-
-        while (true) {
-
-            System.out.println("which problem do you want to run?");
-
-            prognum = in.nextInt();
-
-            switch (prognum) {
-            case 1:
-                sigma();
-                break;
-            case 2:
-                grades();
-                break;
-            case 3:
-                reciprocal();
-                break;
-            case 4:
-                lcm();
-                break;
-            case 5:
-                sqrt();
-                break;
-            } // switch
-        } // while
-    } // main
 } // class

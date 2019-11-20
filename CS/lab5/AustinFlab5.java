@@ -49,16 +49,6 @@ class lab5 {
         }
 
         int counter[] = newint [2];
-        counter[1] 
-        do {
-          number1 += Math.pow(integer[counter], (6-counter));
-          counter++;
-        } while (integer[counter] > 47);
-
-        do {
-          number2 += Math.pow(integer[counter], (6-counter));
-          counter++;
-        } while (integer[counter] > 47);
 
     } // three
 
