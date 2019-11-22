@@ -10,7 +10,7 @@ class game {
         int guess = 0;
 
         do {
-            System.out.print("guess a number");
+            System.out.print("guess a number between 0 and 1000:");
             guess = in.nextInt();
             if (guess > number) {
                 System.out.println("too high");
