@@ -11,7 +11,8 @@ class nextString {
             nextString += character[counter];
             counter++;
             }
-        return nextString;
+        System.out.println()
+        return;
     } // next
 
     public static void main(String[] args) {

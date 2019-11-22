@@ -22,12 +22,16 @@ class lab5 {
     } // one
 
     public static void two() throws IOException {
+        char clrline = (char) System.in.read();
         int numbers[] = new int[2];
 
-        System.out.print("input a start letter and an end letter:");
+        System.out.print("input a start character and an end chacter:");
+
         numbers[0] = System.in.read();
 
-        numbers[1] = System.in.read();
+        while (numbers[1] > 32 && numbers[1] < 127) {
+            numbers[1] = System.in.read();
+        }
 
         for (int i = numbers[0]; i <= numbers[1]; i++) {
             System.out.print(i + " ");
@@ -48,7 +52,7 @@ class lab5 {
             integer[i] = System.in.read();
         }
 
-        int counter[] = newint [2];
+        int counter[] = new int[2];
 
     } // three
 
