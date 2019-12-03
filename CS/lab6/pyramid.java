@@ -9,7 +9,7 @@ class pyramid {
         height = (char) System.in.read();
 
         for (int i = height; i >= 0; i--) {
-           System.out.print(i);
+            System.out.print(i);
             }
 
     }
