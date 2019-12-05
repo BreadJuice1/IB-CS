@@ -84,17 +84,24 @@ class AustinFlab6 {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        int prognum;
 
-        System.out.print("which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n 5. Challange");
+        System.out.print("which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n 5. Challange \n");
         prognum = in.nextInt();
 
         switch (prognum) {
             case 1:
                 game(args);
+                main(args);
+                break;
             case 2: 
                 pyramid(args);
+                main(args);
+                break;
             case 3:
                 box(args);
+                main(args);
+                break;
             case 4:
 
         }
