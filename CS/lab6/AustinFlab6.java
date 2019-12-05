@@ -2,8 +2,8 @@ import java.io.*;
 import java.util.Random;
 import java.util.Scanner;
 
-class pyramid {
-    public static void main(String[] args) {
+class AustinFlab6 {
+    public static void pyramid(String[] args) {
         int height = 0;
         int i = 1;
         Scanner in = new Scanner(System.in);
@@ -17,11 +17,9 @@ class pyramid {
             }
             System.out.println();
         }
-    }
-}
+    } // method
 
-class game {
-    public static void main(String[] args) {
+    public static void game(String[] args) {
         Random rand = new Random();
         Scanner in = new Scanner(System.in);
         int number = rand.nextInt(1001);
@@ -37,11 +35,9 @@ class game {
             }
         } while (guess != number);
         System.out.println("you found the number!");
-    } // main
-} // class
+    } // method
 
-class rectangle {
-    public static void main(String[] args) {
+    public static void box(String[] args) {
         int height;
         int width;
         String box = "";
@@ -83,6 +79,26 @@ class rectangle {
             w--;
         } // bottom
         System.out.println(box);
+
+    } // method
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n 5. Challange");
+        prognum = in.nextInt();
+
+        switch (prognum) {
+            case 1:
+                game(args);
+            case 2: 
+                pyramid(args);
+            case 3:
+                box(args);
+            case 4:
+
+        }
+
 
     } // main
 
