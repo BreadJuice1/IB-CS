@@ -13,7 +13,7 @@ class factorials {
 
         int counter = 1;
         for (int i = 1; i <= number; i++) {
-            sum += 
+            
         }
         
         System.out.print(answer);
