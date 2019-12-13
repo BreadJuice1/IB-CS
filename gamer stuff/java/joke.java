@@ -8,12 +8,11 @@ import java.io.FileNotFoundException;
     public static void main(String[] args) throws FileNotFoundException {
         java.util.Random rand = new Random();
         int counter = 0;
-        String punchline;
+        String punchline[] = new String[370103];
         int number = rand.nextInt(370103);
         Scanner in = new Scanner(new File("words_alpha.txt"));
-            while (counter < number) {
-                in.nextLine();
-                counter++;
+            while (in.hasNextLine()) {
+                
             }
             System.out.print(in.nextLine() + " ");
          } // main
