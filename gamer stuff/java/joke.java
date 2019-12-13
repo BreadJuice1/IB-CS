@@ -12,6 +12,7 @@ class joke {
         String puchline[] = new String[2];
         Scanner in = new Scanner(new File("words_alpha.txt"));
         Scanner in2 = new Scanner(new File("words_alpha.txt"));
+        Scanner user = new Scanner(System.in);
         // get the words
         while (counter < number && in.hasNextLine()) {
             if (counter == number - 1) {
