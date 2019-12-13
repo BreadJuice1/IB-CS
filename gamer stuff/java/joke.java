@@ -11,7 +11,6 @@ class joke {
         int counter = 0;
         String puchline[] = new String[2];
         Scanner in = new Scanner(new File("words_alpha.txt"));
-        Scanner in2 = new Scanner(new File("words_alpha.txt"));
         Scanner user = new Scanner(System.in);
         // get the words
         while (counter < number && in.hasNextLine()) {
@@ -24,11 +23,11 @@ class joke {
         } // while
         counter = 0;
         number = rand.nextInt(370103);
-        while (counter < number && in2.hasNextLine()) {
+        while (counter < number && in.hasNextLine()) {
             if (counter == number - 1) {
-                puchline[1] = in2.nextLine();
+                puchline[1] = inu.nextLine();
             } else { // if
-                in2.nextLine();
+                inu.nextLine();
             } // else
         } // while
         System.out.print(puchline[0] + " ");
