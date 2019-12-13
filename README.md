@@ -14,3 +14,5 @@
 
 ### 2. [Java](https://github.com/BreadJuice1/IB-CS/tree/master/gamer%20stuff/java)
   1. [crash](https://github.com/BreadJuice1/IB-CS/tree/master/gamer%20stuff/java/crash.java)
+  2. [joke](https://github.com/BreadJuice1/IB-CS/tree/master/gamer%20stuff/java/joke.java)
+  3. [words_alpha.txt](https://github.com/BreadJuice1/IB-CS/tree/master/gamer%20stuff/java/words_alpha.txt)
