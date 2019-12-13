@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class factorials {
-    public static void main(String[] args) {
+    public static factorial() {
         int sum = 1;
         int number;
         int counter;
