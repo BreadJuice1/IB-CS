@@ -9,9 +9,9 @@ class joke {
         java.util.Random rand = new Random();
         int number = rand.nextInt(370103);
         int counter = 0;
-        String puchline[] = new String[2];
+        String puchline[] = new String[3];
         Scanner in = new Scanner(new File("words_alpha.txt"));
-        Scanner user = new Scanner(System.in);
+        Scanner inu = new Scanner(new File("words_alpha.txt"));
         // get the words
         while (counter < number && in.hasNextLine()) {
             if (counter == number - 1) {
@@ -23,14 +23,18 @@ class joke {
         } // while
         counter = 0;
         number = rand.nextInt(370103);
-        while (counter < number && in.hasNextLine()) {
+        while (counter < number && inu.hasNextLine()) {
             if (counter == number - 1) {
                 puchline[1] = inu.nextLine();
             } else { // if
                 inu.nextLine();
             } // else
+            counter++;
         } // while
-        System.out.print(puchline[0] + " ");
-        System.out.print(puchline[1]);
+
+        System.out.println("knock knock \n whos there");
+        System.out.println(puchline[0] + " ");
+        System.out.println(puchline[0] + " who?");
+        System.out.print(puchline[0] + " " + puchline[1]);
     } // main
 } // class
