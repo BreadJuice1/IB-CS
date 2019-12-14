@@ -31,10 +31,9 @@ class joke {
             } // else
             counter++;
         } // while
-
-        System.out.println("knock knock \n whos there");
-        System.out.println(puchline[0] + " ");
+        System.out.println("knock knock. \nwhos there?");
+        System.out.println(puchline[0] + ".");
         System.out.println(puchline[0] + " who?");
-        System.out.print(puchline[0] + " " + puchline[1]);
+        System.out.print(puchline[0] + " " + puchline[1] + "!");
     } // main
 } // class
