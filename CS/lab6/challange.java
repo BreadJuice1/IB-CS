@@ -19,7 +19,7 @@ class challange {
             if (number[0] % counter == 0 && counter != number[0] && counter != 1) {
                 found = true;
                 number[1] = 1;
-            } else (if )
+            } else if (counter)
             counter++; 
         }
         
