@@ -3,7 +3,7 @@ import java.util.Scanner;
 class factorials {
     
     public static void main(String[] args) {
-        int sum = 1;
+        long sum = 1;
         int number;
         int counter;
         Scanner in = new Scanner(System.in);
