@@ -21,6 +21,7 @@ class factorials {
                 } // if
             } // i
             System.out.println(" = " + sum);
+            sum = 1;
         } // j
     } // method
 } // class
