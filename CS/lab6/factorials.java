@@ -16,6 +16,9 @@ class factorials {
             for (int i = j; i > 0; i--) {
                 System.out.print(i);
                 sum = sum * i;
+                if (i == j) {
+                    System.out.print("! = " + i);
+                }
                 if (i != 1) {
                     System.out.print(" x ");
                 } // if
