@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 class factorials {
-    
+
     public static void main(String[] args) {
         long sum = 1;
         int number;
@@ -12,14 +12,15 @@ class factorials {
         number = in.nextInt();
         counter = 0;
 
-        System.out.print(number + "! = ");
-        for (int i = number; i > 0; i--) {
-            System.out.print(i);
-            sum = sum * i; 
+        for (int j = number; j > 0; j--) {
+            for (int i = j; i > 0; i--) {
+                System.out.print(i);
+                sum = sum * i;
                 if (i != 1) {
                     System.out.print(" x ");
                 } // if
-        } // for
-        System.out.print(" = " + sum);
+            } // i
+            System.out.println(" = " + sum);
+        } // j
     } // method
 } // class
