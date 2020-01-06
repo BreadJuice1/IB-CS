@@ -105,16 +105,15 @@ class AustinFlab6 {
             } // i
             System.out.println(" = " + sum);
             sum = 1;
-        } // j        
+        } // j
     } // method
-
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         int prognum;
 
         System.out.print(
-                "which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n 5. Challange \n");
+                "which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n");
         prognum = in.nextInt();
 
         switch (prognum) {
@@ -134,7 +133,7 @@ class AustinFlab6 {
             factorials(args);
             main(args);
             break;
-        }
+        } // switch
 
     } // main
 
