@@ -14,7 +14,7 @@ class lab7 {
     } // fillprimearray
 
     public static getnextprime() {
-                
+
     } // getnextprime
 
 } // Primes
