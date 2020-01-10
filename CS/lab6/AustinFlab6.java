@@ -65,7 +65,9 @@ class AustinFlab6 {
                 box += " ";
                 w--;
             } // middle
-            box += "*";
+            if (w != 1) {
+                box += "*";
+            }
             System.out.println(box);
             box = "*";
             h--;
@@ -74,10 +76,12 @@ class AustinFlab6 {
         box = "";
         w = width;
 
-        while (w > 0) {
-            box += "*";
-            w--;
-        } // bottom
+        if (h != 1) {
+            while (w > 0) {
+                box += "*";
+                w--;
+            } // bottom
+        }
         System.out.println(box);
 
     } // method
@@ -113,7 +117,7 @@ class AustinFlab6 {
         int prognum;
 
         System.out.print(
-                "which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n");
+                "which program do you want to run? \n 1. guessing game \n 2. pyramid \n 3. rectangle \n 4. factorials \n 5. exit \n");
         prognum = in.nextInt();
 
         switch (prognum) {
@@ -132,6 +136,8 @@ class AustinFlab6 {
         case 4:
             factorials(args);
             main(args);
+            break;
+        case 5:
             break;
         } // switch
 
