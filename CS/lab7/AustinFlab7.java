@@ -1,20 +1,18 @@
-import java.io.Scanner;
+import java.util.Scanner;
 
 class lab7 {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
+   fillprimearray(primearray);
     } // main
 
-    public static fillprimearray(long [] primearray) {
-        primearray = new int[1000];
-        
-        for (int i = 0; i >= 0; i++) {
-            primearray[i] = getnextprime();
+    public static void fillprimearray(long[] primearray) {
+        primearray = new long[1000];
+
+        for (int i = 0; i < 1000; i++) {
+            if (i % primearray[i - 1] == 0) {
+                primearray[i] = i;
+             }
         }
     } // fillprimearray
-
-    public static getnextprime() {
-
-    } // getnextprime
-
 } // Primes
