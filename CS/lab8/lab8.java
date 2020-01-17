@@ -13,6 +13,8 @@ class lab8 {
 
         fillgrades(grades);
         fillid(id);
+        fillgender(gender);
+        filllastname(lastName);
     } // main
 
     public static void fillgrades(int[] grades) {
@@ -42,5 +44,29 @@ class lab8 {
 
     public static void fillid(int[] id) {
         Scanner in = new Scanner(new File("classlist.txt"));
-    }
+        int i = 0;
+        while (in.hasNextLine()) {
+            id[i] = in.nextInt();
+            i++;
+            in.nextLine();
+        }
+    } // fill id
+
+    public static int fillgender(int[] gender) {
+        Scanner in = new Scanner(new File("classlist.txt"));
+        
+        while (in.hasNextLine()) {
+            in.next();
+            in.next();
+            String genderstr = in.next();
+            if (genderstr == "Male") gender[0] += 1;
+            if (genderstr == "Female") gender[1] += 1;
+            in.nextLine();
+        }
+        return 0;
+    } // fillgender
+
+    public static String filllastname(String[] names) {
+        return null;
+    } // filllastnames
 } // lab8
