@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 class lab7 {
+    public static int[] getfactors(int number) {
+        int factors[] = new int[number];
+        for (int i = 0; i <= number; i++) {
+            if (number % i == 0) factors[i] = i; 
+        }  
+        return factors;
+    } // getfactors
 
     public static void fillprimearray(int[] fillarray) {
         int prime = 0;
@@ -77,5 +84,30 @@ class lab7 {
             } // keep the input between 1 and 1000
         
         System.out.println(primearray[prime - 1]);
-    }
+    } // findprime
+
+    private static void primesbetween(int[] primearray) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("what prime do you want to start at?");
+        int start = in.nextInt();
+        System.out.println("what prime do you want to end at?");
+        int end = in.nextInt();
+
+        for (int i = start; i <= end; i++) {
+            System.out.print(primearray[i] + "  ");
+        }
+    } // primesbetween
+
+    private static void primefactors(int[] primearray) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("which number would you like to get the prime factors of?");
+        int number = in.nextInt();
+        int factors[] = getfactors(number);
+
+        for (int i = factors.length(); i >= 0; i--) {
+            if (isprime(factors[i])) System.out.print(factors[i] + "  ");
+        } 
+    } // prime factors
 } // lab 7
