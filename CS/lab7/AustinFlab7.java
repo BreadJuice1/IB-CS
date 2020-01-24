@@ -1,40 +1,44 @@
 import java.util.Scanner;
+import java.io.*;
 
 class lab7 {
     public static int[] getfactors(int number) {
         int factors[] = new int[number];
-        for (int i = 0; i <= number; i++) {
+        for (int i = 2; i <= number; i++) {
             if (number % i == 0) factors[i] = i; 
         }  
         return factors;
     } // getfactors
 
     public static void fillprimearray(int[] fillarray) {
-        int prime = 0;
+        int prime = 3;
 
-        for (int i = 0; i < 1000; i++) {
-            prime = getprime(prime);
+        fillarray[0] = 2;
+        fillarray[1] = 3;
+        for (int i = 2; i < 1000; i++) {
+            prime = getprime(prime + 2);
+
             fillarray[i] = prime;
         }
     } // fillprimearray
 
     private static int getprime(int prime) {
         while (!isprime(prime)) {
-            prime += 1;
+            prime += 2;
         }
 
         return prime;
     } // getprime
 
-    private static boolean isprime(int prime) {
-        boolean isprime = true;
+    private static boolean isprime(int input) {
+        boolean itisprime = true;
 
-        for (int i = 0; i < prime; i++) {
-            if (prime % i == 0) {
-                isprime = false;
+        for (int i = 2; i < input; i++) {
+            if (input % i == 0) {
+                itisprime = false;
             }
         }
-        return isprime;
+        return itisprime;
     }
 
     public static void main(String[] args) {
