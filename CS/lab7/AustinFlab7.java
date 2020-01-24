@@ -3,10 +3,13 @@ import java.io.*;
 
 class lab7 {
     public static int[] getfactors(int number) {
+        int factor = 0;
         int factors[] = new int[number];
-        for (int i = 2; i <= number; i++) {
-            if (number % i == 0) factors[i] = i; 
-        }  
+        for (int i = 1; i <= number; i++) {
+            if (number % i == 0)
+                factors[factor] = i;
+            factor++;
+        }
         return factors;
     } // getfactors
 
@@ -45,73 +48,87 @@ class lab7 {
         int primearray[] = new int[1000];
 
         fillprimearray(primearray);
-
-        for (int i = 0; i < 1000; i++) {
-            System.out.print(primearray[i] + " ");
-        }
-		// programs(primearray);
+        programs(primearray);
     } // main
 
     private static void programs(int[] primearray) {
         Scanner in = new Scanner(System.in);
-        
-        System.out.println("which program do you want to run? \n 1. find prime \n 2. primes between \n 3. prime factors");
+
+        System.out.println(
+                "which program do you want to run? \n 1. find prime \n 2. primes between \n 3. prime factors \n input anything else to exit");
         int program = in.nextInt();
-        
+
         switch (program) {
-            case 1:
-                findprime(primearray);
-                programs(primearray);
-            case 2:
-                primesbetween();
-                programs(primearray);
-            case 3:
-                primefactors();
-                programs(primearray);
-        } 
+        case 1:
+            findprime(primearray);
+            programs(primearray);
+        case 2:
+            primesbetween(primearray);
+            programs(primearray);
+        case 3:
+            primefactors(primearray);
+            programs(primearray);
+        default:
+            break;
+        }
     }
 
-    private static void primefactors() {
+    private static void primefactors(int[] primearray) {
+        Scanner in = new Scanner(System.in);
+        int input;
+        int factors[];
+
+        System.out.println("what number do you want to factor?");
+        input = in.nextInt();
+        factors = getfactors(input);
+
+        try {
+            for (int i = 0; i <= factors.length; i++) {
+                if (isprime(factors[i]) && factors[i] != 0)
+                    System.out.println(factors[i]);
+            }
+        } catch (Exception ArrayIndexOutOfBoundsException) {
+        }
+
     }
 
-    private static void primesbetween() {
-    }
+    private static void primesbetween(int primearray[]) {
+        Scanner in = new Scanner(System.in);
+        int boundary[] = new int[2];
+        int buffer[] = new int[2];
+
+        System.out.println("please input the boundarys");
+        buffer[0] = in.nextInt();
+        buffer[1] = in.nextInt();
+
+        if (buffer[1] > buffer[0]) {
+            boundary[0] = buffer[0];
+            boundary[1] = buffer[1];
+        }
+
+        if (buffer[0] > buffer[1]) {
+            boundary[1] = buffer[0];
+            boundary[0] = buffer[1];
+        }
+
+        for (int i = 0; i < 1000; i++) {
+            if (primearray[i] >= boundary[0] && primearray[i] <= boundary[1]) {
+                System.out.println(primearray[i] + " ");
+            }
+        }
+
+    } // primesbetween
 
     private static void findprime(int[] primearray) {
         Scanner in = new Scanner(System.in);
 
         System.out.println("which prime do you want?");
         int prime = in.nextInt();
-            if (prime < 1 || prime > 1000) {
-                System.out.print("please input a number between 1 and 1000");
-                findprime(primearray);
-            } // keep the input between 1 and 1000
-        
+        if (prime < 1 || prime > 1000) {
+            System.out.print("please input a number between 1 and 1000");
+            findprime(primearray);
+        } // keep the input between 1 and 1000
+
         System.out.println(primearray[prime - 1]);
     } // findprime
-
-    private static void primesbetween(int[] primearray) {
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("what prime do you want to start at?");
-        int start = in.nextInt();
-        System.out.println("what prime do you want to end at?");
-        int end = in.nextInt();
-
-        for (int i = start; i <= end; i++) {
-            System.out.print(primearray[i] + "  ");
-        }
-    } // primesbetween
-
-    private static void primefactors(int[] primearray) {
-        Scanner in = new Scanner(System.in);
-
-        System.out.println("which number would you like to get the prime factors of?");
-        int number = in.nextInt();
-        int factors[] = getfactors(number);
-
-        for (int i = factors.length; i >= 0; i--) {
-            if (isprime(factors[i])) System.out.print(factors[i] + "  ");
-        } 
-    } // prime factors
 } // lab 7
