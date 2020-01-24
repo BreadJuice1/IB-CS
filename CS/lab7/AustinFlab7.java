@@ -106,7 +106,7 @@ class lab7 {
         int number = in.nextInt();
         int factors[] = getfactors(number);
 
-        for (int i = factors.length(); i >= 0; i--) {
+        for (int i = factors.length; i >= 0; i--) {
             if (isprime(factors[i])) System.out.print(factors[i] + "  ");
         } 
     } // prime factors
