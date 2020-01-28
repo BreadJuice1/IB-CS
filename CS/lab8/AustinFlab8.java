@@ -3,26 +3,50 @@ import java.util.Scanner;
 import java.io.FileNotFoundException;
 
 class lab8 {
+    // printarrayint and printarraystring for test
     public static void printarrayint(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.println(array[i]);
         }
     } // printarrayint
-    public static void main(String[] args) throws FileNotFoundException { // main
 
+    public static void printarraystring(String[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.println(array[i]);
+        }
+    }
+
+    public static void fillall(int[] id, int[] grades, String[] lastName, String[] firstName, int[] gender) {
+        fillgrades(grades);
+        fillid(id);
+        fillgender(gender);
+        filllastname(lastName);
+        fillfirstnames(firstName);
+    }
+
+    public static void main(String[] args) throws FileNotFoundException {
+
+        Scanner in = new Scanner(System.in);
         int gender[] = new int[2]; // 0 = male, 1 = female
         int id[] = new int[88];
         String lastName[] = new String[88];
         String firstName[] = new String[88];
         int grades[] = new int[4]; // 0 = freshmen, 1 = sophomores, 2 = juniors, 3 = seniors
 
-        fillgrades(grades);
-        fillid(id);
-        fillgender(gender);
-        filllastname(lastName);
-        fillfirstnames(firstName);
-        
-        printarrayint(gender);
+        fillall(id, grades, lastName, firstName, gender);
+
+        System.out.print("what program do you want to run? \n 1. search");
+        int program = in.nextInt();
+        String programStr = in.next();
+
+        switch (program) {
+        case 1:
+            problemOne(grades, lastName, gender);
+            break;
+        case 2:
+            break;
+        }
+
     } // main
 
     public static void fillgrades(int[] grades) throws FileNotFoundException {
@@ -65,10 +89,10 @@ class lab8 {
 
         while (in.hasNextLine()) {
             String genderstr = in.nextLine();
-            if (genderstr.toLowerCase().contains("male"));
-                gender[0] += 1;
-            if (genderstr.toLowerCase().contains("female"));
-                gender[1] += 1;
+            if (genderstr.toLowerCase().equals("male"));
+            gender[0] += 1;
+            if (genderstr.toLowerCase().equals("female"));
+            gender[1] += 1;
             in.nextLine();
         }
     } // fillgender
@@ -97,4 +121,28 @@ class lab8 {
             in.nextLine();
         }
     } // fillfirstnames
+
+    public static void problemOne(int[] grades, String[] lastName, int[] gender) {
+        System.out.print("\n Freshmen: " + grades[0] + "\n Sophomores: " + grades[1] + "\n Juniors: " + grades[2]
+                + "\n Seniors: " + grades[3]);
+        System.out.print("\n Boys: " + gender[0] + "\n Girls: " + gender[1]);
+        
+        int lastinitials[] = new int[26];
+        getlastinitials(lastName, lastinitials);
+
+        for (int i = 0; i <= 26; i++) {
+            System.out.print(((char) i+65) + lastinitials[i]);
+        }
+        
+    } // problemOne
+
+    public static void getlastinitials(String[] lastName, int[] lastinitials) {
+        char initial;
+        int index;
+        for (int i = 0; i < lastName.length; i++) {
+            initial = lastName[i].substring(0,1);
+            index = (int) initial - 65;
+            lastinitials[index] += 1;
+        }
+    } // getlastinitials
 } // lab8
