@@ -16,14 +16,6 @@ class lab8 {
         }
     }
 
-    public static void fillall(int[] id, int[] grades, String[] lastName, String[] firstName, int[] gender) {
-        fillgrades(grades);
-        fillid(id);
-        fillgender(gender);
-        filllastname(lastName);
-        fillfirstnames(firstName);
-    }
-
     public static void main(String[] args) throws FileNotFoundException {
 
         Scanner in = new Scanner(System.in);
@@ -33,9 +25,13 @@ class lab8 {
         String firstName[] = new String[88];
         int grades[] = new int[4]; // 0 = freshmen, 1 = sophomores, 2 = juniors, 3 = seniors
 
-        fillall(id, grades, lastName, firstName, gender);
+        fillgrades(grades);
+        fillid(id);
+        fillgender(gender);
+        filllastname(lastName);
+        fillfirstnames(firstName);
 
-        System.out.print("what program do you want to run? \n 1. search");
+        System.out.print("what program do you want to run? \n 1. last initials \n");
         int program = in.nextInt();
         String programStr = in.next();
 
@@ -89,9 +85,11 @@ class lab8 {
 
         while (in.hasNextLine()) {
             String genderstr = in.nextLine();
-            if (genderstr.toLowerCase().equals("male"));
+            if (genderstr.toLowerCase().equals("male"))
+                ;
             gender[0] += 1;
-            if (genderstr.toLowerCase().equals("female"));
+            if (genderstr.toLowerCase().equals("female"))
+                ;
             gender[1] += 1;
             in.nextLine();
         }
@@ -126,21 +124,21 @@ class lab8 {
         System.out.print("\n Freshmen: " + grades[0] + "\n Sophomores: " + grades[1] + "\n Juniors: " + grades[2]
                 + "\n Seniors: " + grades[3]);
         System.out.print("\n Boys: " + gender[0] + "\n Girls: " + gender[1]);
-        
+
         int lastinitials[] = new int[26];
         getlastinitials(lastName, lastinitials);
 
         for (int i = 0; i <= 26; i++) {
-            System.out.print(((char) i+65) + lastinitials[i]);
+            System.out.print(((char) i + 65) + lastinitials[i]);
         }
-        
+
     } // problemOne
 
     public static void getlastinitials(String[] lastName, int[] lastinitials) {
         char initial;
         int index;
         for (int i = 0; i < lastName.length; i++) {
-            initial = lastName[i].substring(0,1);
+            initial = lastName[i].charAt(0);
             index = (int) initial - 65;
             lastinitials[index] += 1;
         }
