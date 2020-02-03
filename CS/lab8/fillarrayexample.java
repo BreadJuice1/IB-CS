@@ -12,7 +12,6 @@ public static boolean isprime(int candidate) {
 	  Yes, there are little optimizations we can do but this is meant to show that we
 	  have ABSTRACTED out the question of "isprime" to it's own method and now could
 	  be used by any other method in my program.
-	  
 	*/
 	int i = 0;
 	boolean itisprime = true;
@@ -96,6 +95,3 @@ public static int getnextprime(int curprime) {
     
 
  }//fillarrayexample 
-
- 
-   
