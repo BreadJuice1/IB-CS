@@ -2,7 +2,7 @@ import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
 
-class lab8 {
+class AustinFlab8 {
     // printarrayint and printarraystring for test
     public static void printarrayint(int[] array) {
         for (int i = 0; i < array.length; i++) {
@@ -31,15 +31,16 @@ class lab8 {
         filllastname(lastName);
         fillfirstnames(firstName);
 
-        System.out.print("what program do you want to run? \n 1. last initials \n");
+        System.out.print("\n what program do you want to run? \n 1. last initials \n");
         int program = in.nextInt();
-        String programStr = in.next();
 
         switch (program) {
         case 1:
             problemOne(grades, lastName, gender);
+            main(args);
             break;
-        case 2:
+        default:
+            System.out.println("quiting program...");
             break;
         }
 
@@ -126,21 +127,14 @@ class lab8 {
         System.out.print("\n Boys: " + gender[0] + "\n Girls: " + gender[1]);
 
         int lastinitials[] = new int[26];
-        getlastinitials(lastName, lastinitials);
 
-        for (int i = 0; i <= 26; i++) {
-            System.out.print(((char) i + 65) + lastinitials[i]);
+        for (int i = 0; i < lastName.length; i++) {
+            lastinitials[(int) lastName[i].toUpperCase().charAt(0) - 65] += 1;
+        }
+
+        for (int j = 0; j < 26; j++) {
+            System.out.print("\n" + ((char) (j + 65)) + ": " + lastinitials[j]);
         }
 
     } // problemOne
-
-    public static void getlastinitials(String[] lastName, int[] lastinitials) {
-        char initial;
-        int index;
-        for (int i = 0; i < lastName.length; i++) {
-            initial = lastName[i].charAt(0);
-            index = (int) initial - 65;
-            lastinitials[index] += 1;
-        }
-    } // getlastinitials
 } // lab8
