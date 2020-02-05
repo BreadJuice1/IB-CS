@@ -138,3 +138,13 @@ class AustinFlab8 {
 
     } // problemOne
 } // lab8
+
+class studentbruh {
+    student(int grade, String lastname, String firstname, String gender, int id) {
+        this.number = id;
+        this.grade = grade;
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.gender = gender;
+    }
+} // student
