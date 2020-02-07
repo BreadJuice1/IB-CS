@@ -48,7 +48,7 @@ class bruh {
             students[i] = new Student(id, grade, lastname, firstname, gender);
         }
 
-        problemOne(students);
+      problemOne(students);
     } // main
 
     public static void problemOne(Student[] students) {
