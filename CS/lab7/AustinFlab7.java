@@ -26,8 +26,7 @@ class lab7 {
     } // fillprimearray
 
     private static int getprime(int prime) {
-        while (!isprime(prim
-        e)) {
+        while (!isprime(prime)) {
             prime += 2;
         }
 
