@@ -11,11 +11,11 @@ class Student {
     String gender;
 
     Student(int studentid, int grade, String lastname, String firstname, String gender) {
-        this.studentid  = studentid;
-        this.grade      = grade;
-        this.lastname   = lastname;
-        this.firstname  = firstname;
-        this.gender     = gender;
+        this.studentid = studentid;
+        this.grade = grade;
+        this.lastname = lastname;
+        this.firstname = firstname;
+        this.gender = gender;
     } // student
 } // student class
 
@@ -38,33 +38,44 @@ class bruh {
         String gender;
 
         while (classlist.hasNext()) {
-            id          = classlist.nextInt();
-            grade       = classlist.nextInt();
-            lastname    = classlist.next();
-            firstname   = classlist.next();
-            gender      = classlist.next();
+            id = classlist.nextInt();
+            grade = classlist.nextInt();
+            lastname = classlist.next();
+            firstname = classlist.next();
+            gender = classlist.next();
             studentAmount++;
             students[studentAmount] = new Student(id, grade, lastname, firstname, gender);
         }
-        System.out.println("which problem do you want to run? \n 1. statistics \n 2. bubble-sort");
-        progNum = maininput.nextInt();
-        switch (progNum) {
-            case 1:
-                problemOne(students, studentAmount);
-                break;
-            case 2:
-                problemTwo();
-                break;
-            default:
-                break;
-        } // switch
+
+        menu(students, studentAmount);
     } // main
 
-    private static void problemTwo() {
-        
-    }
+    public static void menu(Student[] students, int studentAmount) {
+        System.out.println("which problem do you want to run? \n 1. statistics \n 2. bubble-sort");
+        Scanner in = new Scanner(System.in);
+        int progNum;
+        progNum = in.nextInt();
+        switch (progNum) {
+        case 1:
+            stats(students, studentAmount);
+            menu(students, studentAmount);
+            break;
+        case 2:
+            bubbleSort(students, studentAmount);
+            menu(students, studentAmount);
+            break;
+        default:
+            break;
+        } // switch
 
-    public static void problemOne(Student[] students, int studentAmount) {
+    } // menu
+
+    private static void bubbleSort(Student[] students, int studentAmount) {
+        
+
+    } // bubble sort
+
+    public static void stats(Student[] students, int studentAmount) {
         int gradeAmount[] = new int[4]; // 0 = freshmen; 1 = sophomores; 2 = juniors; 3 = seniors
         int genderAmount[] = new int[2]; // 1 = male; 0 = female
         int curGrade;
