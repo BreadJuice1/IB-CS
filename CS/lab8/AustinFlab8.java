@@ -1,7 +1,6 @@
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-import java.io.BufferedWriter;
 
 class Student {
     long studentid;
@@ -71,8 +70,8 @@ class bruh {
     } // menu
 
     private static void bubbleSort(Student[] students, int studentAmount) {
+        File file = new File("sorted.txt");
         
-
     } // bubble sort
 
     public static void stats(Student[] students, int studentAmount) {
