@@ -1,6 +1,8 @@
+import java.io.BufferedWriter;
 import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
-import java.io.FileNotFoundException;
 
 class Student {
     long studentid;
@@ -19,7 +21,7 @@ class Student {
 } // student class
 
 class bruh {
-    public static void main(String[] args) throws FileNotFoundException {
+    public static void main(String[] args) throws IOException {
         int studentamount;
         String filename;
         Scanner maininput = new Scanner(System.in);
@@ -49,29 +51,38 @@ class bruh {
         menu(students, studentAmount);
     } // main
 
-    public static void menu(Student[] students, int studentAmount) {
+    public static void menu(Student[] students, int studentAmount) throws IOException {
         System.out.println("which problem do you want to run? \n 1. statistics \n 2. bubble-sort");
         Scanner in = new Scanner(System.in);
         int progNum;
         progNum = in.nextInt();
         switch (progNum) {
-        case 1:
-            stats(students, studentAmount);
-            menu(students, studentAmount);
-            break;
-        case 2:
-            bubbleSort(students, studentAmount);
-            menu(students, studentAmount);
-            break;
-        default:
-            break;
+            case 1:
+                stats(students, studentAmount);
+                menu(students, studentAmount);
+                break;
+            case 2:
+                bubbleSort(students, studentAmount);
+                menu(students, studentAmount);
+                break;
+            default:
+                break;
         } // switch
 
     } // menu
 
-    private static void bubbleSort(Student[] students, int studentAmount) {
-        File file = new File("sorted.txt");
-        
+    private static void bubbleSort(Student[] students, int studentAmount) throws IOException {
+        try (FileWriter writer = new FileWriter("class.txt");
+        BufferedWriter bw = new BufferedWriter(writer)) {}
+
+        students[studentAmount+1] = new Student(1,2,"","",""); // temp student
+        for (int i = 1; i <= studentAmount; i++) {
+            if (students[i].lastname.compareToIgnoreCase(students[i+1].lastname) == 1) {
+                students[studentAmount+1] = students[i];
+            }
+        }
+
+
     } // bubble sort
 
     public static void stats(Student[] students, int studentAmount) {
