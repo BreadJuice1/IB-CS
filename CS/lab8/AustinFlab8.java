@@ -72,15 +72,31 @@ class bruh {
     } // menu
 
     private static void bubbleSort(Student[] students, int studentAmount) throws IOException {
-        try (FileWriter writer = new FileWriter("class.txt");
-        BufferedWriter bw = new BufferedWriter(writer)) {}
-
         students[studentAmount+1] = new Student(1,2,"","",""); // temp student
+        String bruh;
+        String bruh2;
+        try (FileWriter writer = new FileWriter("class.txt");
+        BufferedWriter bw = new BufferedWriter(writer)) {
+            for (int i = 1; i <= studentAmount; i++) {
+                bruh = students[i].lastname;
+                bruh2 = students[i+1].lastname;
+                if (bruh.compareToIgnoreCase(bruh2) < 0) {
+                    students[studentAmount+1].lastname = bruh;
+                    students[i].lastname = bruh2;
+                    students[i+1].lastname = students[studentAmount+1].lastname;
+                    bw.append(i + " " + students[i].lastname);
+                }
+                bw.newLine();
+            }
+            
+        }
+
+      /*  students[studentAmount+1] = new Student(1,2,"","",""); // temp student
         for (int i = 1; i <= studentAmount; i++) {
             if (students[i].lastname.compareToIgnoreCase(students[i+1].lastname) == 1) {
                 students[studentAmount+1] = students[i];
             }
-        }
+        } */
 
 
     } // bubble sort
