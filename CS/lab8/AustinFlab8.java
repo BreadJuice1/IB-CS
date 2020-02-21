@@ -85,6 +85,10 @@ class bruh {
                     students[i].lastname = bruh2;
                     students[i+1].lastname = students[studentAmount+1].lastname;
                     bw.append(i + " " + students[i].lastname);
+                } else if (bruh.compareToIgnoreCase(bruh2) == 0) {
+                    bw.append(bruh);
+                } else if (bruh.compareToIgnoreCase(bruh2) > 0) {
+                    bw.append(bruh);
                 }
                 bw.newLine();
             }
