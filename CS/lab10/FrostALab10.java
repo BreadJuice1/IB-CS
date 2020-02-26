@@ -18,26 +18,30 @@ public class FrostALab10 extends Application {
         Button toggle = new Button();
         primaryStage.setTitle("bruh");
         java.setText("bruh");
-        java.setOnAction(new EventHandler<ActionEvent>() {
 
-            @Override
-            public void handle(ActionEvent event) {
-                System.out.println("bruh");
-            }
-        });
     java.setLayoutX(60);
     java.setLayoutY(60);
 
-    toggle.setText("bruh");
+    toggle.setText("on");
     toggle.setOnAction(new EventHandler<ActionEvent>() {
 
         @Override
         public void handle(ActionEvent event) {
-            if (toggle.getText().equals("bruh")) {
-                toggle.setText("breh");
-            } else if (toggle.getText().equals("breh")) {
-                toggle.setText("bruh");
+            if (toggle.getText().equals("on")) {
+                toggle.setText("off");
+            } else if (toggle.getText().equals("off")) {
+                toggle.setText("on");
             }
+        }
+    });
+
+    java.setOnAction(new EventHandler<ActionEvent>() {
+
+        @Override
+        public void handle(ActionEvent event) {
+            if (toggle.getText().equals("on")) {
+            System.out.println("bruh");
+            } 
         }
     });
     toggle.setLayoutX(60);
