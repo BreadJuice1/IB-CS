@@ -16,8 +16,8 @@ public class FrostALab10 extends Application {
     public void start(Stage primaryStage) {
         Button java = new Button();
         Button toggle = new Button();
-        primaryStage.setTitle("bruh");
-        java.setText("bruh");
+        primaryStage.setTitle("hello world");
+        java.setText("hello");
 
     java.setLayoutX(60);
     java.setLayoutY(60);
@@ -40,7 +40,7 @@ public class FrostALab10 extends Application {
         @Override
         public void handle(ActionEvent event) {
             if (toggle.getText().equals("on")) {
-            System.out.println("bruh");
+            System.out.println("hello world");
             } 
         }
     });
