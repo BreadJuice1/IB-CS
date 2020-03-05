@@ -7,7 +7,7 @@ class FrostALab9 {
         int program;
 
         System.out.println(
-                " sum | 1 \n tables | 2 \n fibonacci sequence | 3 \n interest rate | 4 \n pattern | 5 \n yet more pics | 6 \n pot shots at pi | 7 \n ");
+                "\n sum | 1 \n tables | 2 \n fibonacci sequence | 3 \n interest rate | 4 \n pattern | 5 \n yet more pics | 6 \n pot shots at pi | 7 \n ");
         program = in.nextInt();
 
         switch (program) {
@@ -22,6 +22,9 @@ class FrostALab9 {
                 main(args);
             case 4:
                 interest();
+                main(args);
+            case 5:
+                pattern();
                 main(args);
             default:
                 break;
@@ -74,6 +77,41 @@ class FrostALab9 {
     } // fibonacci
 
     public static void interest() {
-        
+        double cash;
+        double amount;
+        double rate;
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("\n" + "input the starting amount and rate (in that order)");
+        cash = in.nextInt();
+        rate = in.nextInt();
+
+        amount = cash * Math.pow((1+rate/100),(30));
+        double rounded = Math.round(amount * 100.0) / 100.0;
+        System.out.print("\n" + "after 30 years, the amount is $" + rounded);
     } // interest
+
+    public static void pattern() {
+        int height;
+        int width;
+        Scanner in = new Scanner(System.in);
+        System.out.print("\n" + "Enter the height then width: ");
+        height = in.nextInt();
+        width = in.nextInt();
+
+        for (int i = 0; i < height; i++) {
+            if (i % 2 != 0) {
+                for (int j = 0; j < (width/2); j++) {
+                    System.out.print("*");
+                    System.out.print("0");
+                } 
+            } else if (i % 2 == 0) {
+                for (int j = 0; j < width; j++) {
+                    System.out.print("*");
+                }      
+            }
+            System.out.print("\n");
+        }
+        
+    } // pattern
 }
