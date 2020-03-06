@@ -26,6 +26,9 @@ class FrostALab9 {
             case 5:
                 pattern();
                 main(args);
+            case 6:
+                pics();
+                main(args);
             default:
                 break;
         }
@@ -114,4 +117,46 @@ class FrostALab9 {
         }
         
     } // pattern
+
+     public static void pics() {
+        Scanner in = new Scanner(System.in);
+        int height;
+        int shape = -1;
+        String strShape;
+        do {
+        System.out.println("\n" + "do you want to make an X or a diamond?");
+        strShape = in.next();
+        if (strShape.contains("x")) {
+            shape = 0;
+        } else if (strShape.contains("diamond")) {
+            shape = 1;
+        } else {
+            System.out.println("\n" + "please choose a shape"); 
+        }
+        } while (shape < 0);
+
+        System.out.println("\n" + "input height");
+        height = in.nextInt();
+
+        if (shape == 0) {
+            xshape(height);
+        } else if (shape == 1) {
+           // diamond(height);
+        } else {
+            System.out.println("\n" + "bruh moment");
+        }
+     } // pics
+
+     public static void xshape(int height) {
+        int bruh;
+        for (int i = -height; i <= height; i++) {
+            System.out.print("*");
+            if (Math.abs(i) % 2 == 0) System.out.print("\n");
+            bruh = Math.abs(i);
+            while (bruh > 0) {
+                System.out.print(" ");
+                bruh--;
+            }
+        }
+     }
 }
