@@ -42,9 +42,15 @@ public class cool {
             System.out.println(amount);
         } // fill array
 
-        for (int j = 22500; j >= 0; j--) {
-            
-        }
+        int curX = 0;
+        int curY = 0;
+        int neigbors = 0;
+            for (int j = 22500; j >= 0; j--) {
+                int relLoc = 0;
+                for (int a = 0; a < 16; a++) {
+                    
+                }
+            }
 
     
     } // ur mum
