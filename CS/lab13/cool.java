@@ -42,25 +42,29 @@ public class cool {
             System.out.println(amount);
         } // fill array
 
-        int curX = 0;
-        int curY = 0;
+        int curX = 1;
+        int curY = 1;
         int neigbors = 0;
             for (int j = 22500; j >= 0; j--) {
+                System.out.println("new cell");
+                if (curX < 149) {curX++;} else if (curX == 149) {curX = 0; curY++;} 
+
                 int relLocX = -1;
                 int relLocY = -1;
-                for (int a = 0; a < 8; a++) {                    
-                    if (life[curX-relLocX][curY-relLocY] == 1) {
-                        neigbors++;
+                neigbors = 0;
+                for (int a = 0; a < 8; a++) {            
+                    if (curX != 149 && curY != 149) {   
+                        if (life[curX+relLocX][curY+relLocY] == 1) {neigbors++;}
 
-                    if (relLocX == -1 && relLocY <= 0) {relLocY++;}
-                    if (relLocX == -1 && relLocY == 1) {relLocX++;}
-                    if (relLocX == 0 && relLocY == 1) {relLocX = 0; relLocY = -1;}
-                    if (relLocX == 0 && relLocY == -1) {relLocX++;}
-                    if (relLocX == 1 && relLocY == -1) {relLocY++;}
-                    if (relLocX == 1 && relLocY <= 0) {relLocY++;}
-
-                    } // if 
-                }
+                        if (relLocX == -1 && relLocY <= 0) {relLocY++;}
+                        if (relLocX == -1 && relLocY == 1) {relLocX++;}
+                        if (relLocX == 0 && relLocY == 1) {relLocX = 0; relLocY = -1;}
+                        if (relLocX == 0 && relLocY == -1) {relLocX++;}
+                        if (relLocX == 1 && relLocY == -1) {relLocY++;}
+                        if (relLocX == 1 && relLocY <= 0) {relLocY++;}
+                    }     
+                } 
+                System.out.println(neigbors);
             }
 
     
