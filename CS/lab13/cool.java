@@ -46,9 +46,20 @@ public class cool {
         int curY = 0;
         int neigbors = 0;
             for (int j = 22500; j >= 0; j--) {
-                int relLoc = 0;
-                for (int a = 0; a < 16; a++) {
-                    
+                int relLocX = -1;
+                int relLocY = -1;
+                for (int a = 0; a < 8; a++) {                    
+                    if (life[curX-relLocX][curY-relLocY] == 1) {
+                        neigbors++;
+
+                    if (relLocX == -1 && relLocY <= 0) {relLocY++;}
+                    if (relLocX == -1 && relLocY == 1) {relLocX++;}
+                    if (relLocX == 0 && relLocY == 1) {relLocX = 0; relLocY = -1;}
+                    if (relLocX == 0 && relLocY == -1) {relLocX++;}
+                    if (relLocX == 1 && relLocY == -1) {relLocY++;}
+                    if (relLocX == 1 && relLocY <= 0) {relLocY++;}
+
+                    } // if 
                 }
             }
 
