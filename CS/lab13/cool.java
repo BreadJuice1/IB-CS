@@ -56,12 +56,7 @@ public class cool {
                     if (curX != 149 && curY != 149) {   
                         if (life[curX+relLocX][curY+relLocY] == 1) {neigbors++;}
 
-                        if (relLocX == -1 && relLocY <= 0) {relLocY++;}
-                        if (relLocX == -1 && relLocY == 1) {relLocX++;}
-                        if (relLocX == 0 && relLocY == 1) {relLocX = 0; relLocY = -1;}
-                        if (relLocX == 0 && relLocY == -1) {relLocX++;}
-                        if (relLocX == 1 && relLocY == -1) {relLocY++;}
-                        if (relLocX == 1 && relLocY <= 0) {relLocY++;}
+                        
                     }     
                 } 
                 System.out.println(neigbors);
